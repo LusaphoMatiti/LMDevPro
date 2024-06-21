@@ -65,13 +65,24 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #8c8c8c;
   box-sizing: border-box;
   z-index: 999;
   display: flex;
   flex-direction: column;
   align-items: baseline;
   padding-top: 10px;
+}
+
+.fullscreen-img {
+  background-image: url("../images/fullmenu.jpeg");
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .fullscreen-menu button {

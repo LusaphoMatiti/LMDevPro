@@ -19,24 +19,24 @@ const CV = () => {
                   National Certificate: IT Systems Developer NQF5 - Full Stack
                   Web and Software Developer
                 </h4>
-                <div class="vertical-line"></div>
-                <div class="education-info">
+                <div className="vertical-line"></div>
+                <div className="education-info">
                   <p>Academic Institute Of Excellence</p>
                   <p>Feb 2022 - Feb 2024</p>
                 </div>
               </li>
               <li>
                 <h4>Data Analysis</h4>
-                <div class="vertical-line"></div>
-                <div class="education-info">
+                <div className="vertical-line"></div>
+                <div className="education-info">
                   <p>University Of Cape Town</p>
                   <p>Sep 2020 - Jan 2021</p>
                 </div>
               </li>
               <li>
                 <h4>Search Engine Optimization</h4>
-                <div class="vertical-line"></div>
-                <div class="education-info">
+                <div className="vertical-line"></div>
+                <div className="education-info">
                   <p>University Of Cape Town</p>
                   <p>Sep 2020 - Jan 2021</p>
                 </div>

@@ -25,7 +25,7 @@ const LandPage = () => {
             transform: `translateX(-${scrollY * 0.05}px)`, // Move from the left
           }}
         >
-          <img src="Ludz.jpg" alt="Lusapho" />
+          <img src="Ludz.jpg" alt="hb" />
         </div>
         <div className="animate-left">
           <h1>Hi, I'm Lusapho.</h1>

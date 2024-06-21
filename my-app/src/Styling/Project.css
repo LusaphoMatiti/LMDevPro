@@ -47,6 +47,10 @@ a {
   width: 40px;
 }
 
+.project-item a {
+  color: #fff;
+}
+
 .projects {
   background-image: url("../images/projects1.jpeg"); /* Replace with the path to your projects image /
   background-size: cover;

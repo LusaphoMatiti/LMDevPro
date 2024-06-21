@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./Pages/Home";
+import HomePage from "./Pages/HomePage";
 import About from "./Pages/About";
 import CV from "./Pages/CV";
 import Contact from "./Pages/Contact";
@@ -9,9 +9,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 const App = () => {
   return (
     <div>
-      <Router>
+      <Router basename="/myapp">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cv" element={<CV />} />
