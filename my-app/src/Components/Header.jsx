@@ -90,6 +90,7 @@ const Header = () => {
         </div>{" "}
         {isMenuActive && (
           <div className="fullscreen-menu">
+            <div className="fullscreen-img"></div>
             <div className="close-button" onClick={closeMenu}>
               &times;
             </div>
