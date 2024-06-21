@@ -37,7 +37,7 @@
   flex: 1; /* Allow the right div to grow to fill available space */
   padding-left: 20px; /* Add padding to create space between left and right div */
   padding-right: 30px;
-  background-color: #ffffff;
+  background-color: black;
   max-width: 90%;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
