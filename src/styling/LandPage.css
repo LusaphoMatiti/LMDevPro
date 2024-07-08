@@ -1,13 +1,12 @@
 .landpage {
   font-family: "Poppins", sans-serif;
-  position: relative;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   background-image: url("../images/landpage.jpeg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
@@ -65,10 +64,8 @@
 
 @media screen and (max-width: 768px) {
   .land-img img {
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 75px;
+    background-size: cover; /* Adjust for smaller screens if needed */
+    background-position: center;
   }
 
   .animate-left {
@@ -86,9 +83,8 @@
 
 @media screen and (max-width: 480px) {
   .land-img img {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
+    background-size: contain; /* Revert to contain for very small screens */
+    background-position: center;
   }
 
   .animate-left {
