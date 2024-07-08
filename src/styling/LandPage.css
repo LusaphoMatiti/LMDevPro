@@ -6,7 +6,7 @@
   justify-content: center;
   overflow-x: hidden; /* Hide horizontal scrollbar */
   background-image: url("../images/landpage.jpeg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
@@ -44,9 +44,7 @@
 
 @media screen and (max-width: 1024px) {
   .land-img img {
-    width: 175px;
-    height: 175px;
-    border-radius: 87.5px;
+    background-size: 100% auto;
   }
 
   .animate-left {
@@ -64,8 +62,7 @@
 
 @media screen and (max-width: 768px) {
   .land-img img {
-    background-size: cover; /* Adjust for smaller screens if needed */
-    background-position: center;
+    background-size: 100% auto;
   }
 
   .animate-left {
@@ -83,8 +80,7 @@
 
 @media screen and (max-width: 480px) {
   .land-img img {
-    background-size: contain; /* Revert to contain for very small screens */
-    background-position: center;
+    background-size: 100% auto;
   }
 
   .animate-left {
