@@ -5,6 +5,10 @@
   background-position: center;
   height: 100vh; /* Adjust the height of the section as needed */
   width: 100%; /* Ensure the section spans the entire width */
+  position: relative;
+  -webkit-background-size: cover;
+  background-attachment: fixed;
+  transform: translateZ(0);
 }
 
 .contact-details {
@@ -48,5 +52,21 @@
     justify-content: flex-start;
     margin-right: 30px;
     margin-top: 0px;
+  }
+
+  .contact {
+    background-size: cover; /* Maintain size and aspect ratio */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact {
+    background-size: cover; /* Maintain size and aspect ratio */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    background-size: cover; /* Maintain size and aspect ratio */
   }
 }
