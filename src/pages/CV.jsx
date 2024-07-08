@@ -16,8 +16,8 @@ const CV = () => {
             <ul>
               <li>
                 <h4>
-                  National Certificate: IT Systems Developer NQF5 - Full Stack
-                  Web and Software Developer
+                  National Certificate: Systems Developement - Full Stack Web
+                  and Software Developer
                 </h4>
                 <div className="vertical-line"></div>
                 <div className="education-info">
