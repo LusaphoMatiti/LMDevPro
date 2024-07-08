@@ -11,8 +11,6 @@
   background-position: center;
   height: 100vh;
   width: 100%;
-  top: 0;
-  left: 0;
   filter: contrast(90%);
   text-align: center;
 }
@@ -44,7 +42,9 @@
 
 @media screen and (max-width: 1024px) {
   .land-img img {
-    background-size: 100% auto;
+    width: 175px;
+    height: 175px;
+    border-radius: 87.5px;
   }
 
   .animate-left {
@@ -62,7 +62,10 @@
 
 @media screen and (max-width: 768px) {
   .land-img img {
-    background-size: 100% auto;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 75px;
   }
 
   .animate-left {
@@ -80,7 +83,9 @@
 
 @media screen and (max-width: 480px) {
   .land-img img {
-    background-size: 100% auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
   }
 
   .animate-left {
