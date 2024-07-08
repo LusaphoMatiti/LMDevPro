@@ -29,7 +29,7 @@ const LandPage = () => {
         </div>
         <div className="animate-left">
           <h1>Hi, I'm Lusapho.</h1>
-          <h2>Let's build something awesome together</h2>
+          <h2>Let's build something awesome together!</h2>
         </div>
       </div>
     </div>

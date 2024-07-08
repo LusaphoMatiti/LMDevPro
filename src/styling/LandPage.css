@@ -1,5 +1,6 @@
 .landpage {
   font-family: "Poppins", sans-serif;
+  position: relative;
   color: #fff;
   display: flex;
   align-items: center;
@@ -9,8 +10,10 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
+  top: 0;
+  left: 0;
   filter: contrast(90%);
   text-align: center;
 }
