@@ -81,7 +81,7 @@ const Header = () => {
           </div>
           <div>
             <Link style={{ textDecoration: "none" }} to="/contact">
-              <button data-nav="projects">Contact</button>
+              <button data-nav="contact">Contact</button>
             </Link>
           </div>
         </div>
@@ -105,7 +105,7 @@ const Header = () => {
                 <button>CV</button>
               </Link>
               <Link to="/projects">
-                <button>Project</button>
+                <button>Projects</button>
               </Link>
             </div>
           </div>

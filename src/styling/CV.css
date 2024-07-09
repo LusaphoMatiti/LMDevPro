@@ -71,6 +71,10 @@
   .right {
     padding: 15px;
   }
+
+  .cv {
+    background-size: cover; /* Maintain size and aspect ratio */
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -84,11 +88,17 @@
     padding: 20px;
     margin: 10px 0;
   }
+
+  .cv {
+    background-size: cover; /* Maintain size and aspect ratio */
+  }
 }
 
 @media screen and (max-width: 480px) {
   .cv {
     padding: 10px;
+
+    background-size: cover; /* Maintain size and aspect ratio */
   }
 
   .myCV {
