@@ -83,6 +83,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 1;
+}
+
+.fullscreen-menu .links {
+  position: relative;
+  z-index: 2; /* Ensure links are above the image */
 }
 
 .fullscreen-menu button {
@@ -95,6 +101,7 @@
   border-radius: 10px;
   padding: 10px;
   width: 100px;
+  z-index: 2; /* Ensure buttons are above the image */
 }
 
 .fullscreen-menu button:hover {
@@ -117,6 +124,7 @@
   font-size: 24px;
   margin-left: 10px;
   align-self: flex-start;
+  z-index: 2;
 }
 
 @media (max-width: 768px) {
