@@ -1,21 +1,33 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage": "https://lmdevpro.com",
+=======
+>>>>>>> 82c3734a54fdf3bbb5ea755fb2e02c03a16d063d
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.3",
+=======
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.24.1",
+>>>>>>> 82c3734a54fdf3bbb5ea755fb2e02c03a16d063d
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+<<<<<<< HEAD
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+=======
+>>>>>>> 82c3734a54fdf3bbb5ea755fb2e02c03a16d063d
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -38,8 +50,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
+=======
+>>>>>>> 82c3734a54fdf3bbb5ea755fb2e02c03a16d063d
   }
 }
