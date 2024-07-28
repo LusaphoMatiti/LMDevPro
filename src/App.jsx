@@ -1,10 +1,10 @@
 import React from "react";
-import HomePage from "./Pages/HomePage";
-import About from "./Pages/About";
-import CV from "./Pages/CV";
-import Contact from "./Pages/Contact";
-import Projects from "./Pages/Projects";
-import Navbar from "./Components/Navbar";
+import LandPage from "./pages/LandPage";
+import About from "./pages/About";
+import CV from "./pages/CV";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
           path="/"
           element={
             <>
-              <HomePage />
+              <LandPage />
               <About />
               <Projects />
               <CV />
@@ -24,12 +24,11 @@ const App = () => {
             </>
           }
         />
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/cv" element={<CV />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/cv" element={<CV />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </Router>
   );

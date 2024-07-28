@@ -1,13 +1,13 @@
 import React from "react";
-import Navbar from "../Components/Navbar";
-import About from "./About";
-import Contact from "./Contact";
-import CV from "./CV";
-import Projects from "./Projects";
+import Navbar from "../components/Navbar";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import CV from "../pages/CV";
+import Projects from "../pages/Projects";
 import "../styling/Navbar.css";
-import LandPage from "./LandPage";
+import LandPage from "../pages/LandPage";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
       <LandPage />
@@ -20,4 +20,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
