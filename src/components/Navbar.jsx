@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styling/Navbar.css";
-import { socialLinks } from "../data";
-import { homePageLinks } from "../data";
+import { socialLinks, homePageLinks } from "../data";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -34,12 +33,13 @@ const Navbar = () => {
           <ul className="nav-links" id="nav-links">
             {homePageLinks.map((link) => {
               const { id, href, text } = link;
-
-              <li key={id}>
-                <Link to={href} className="nav-link">
-                  {text}
-                </Link>
-              </li>;
+              return (
+                <li key={id}>
+                  <a to={href} className="nav-link">
+                    {text}
+                  </a>
+                </li>
+              );
             })}
           </ul>
 
