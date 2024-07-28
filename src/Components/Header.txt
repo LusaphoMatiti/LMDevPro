@@ -1,8 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import "../Styling/Header.css";
-
-const Header = () => {
+const Navbar = () => {
   const [isMenuActive, setIsMenuActive] = useState(false);
 
   const toggleMenu = () => {
@@ -81,7 +77,7 @@ const Header = () => {
           </div>
           <div>
             <Link style={{ textDecoration: "none" }} to="/contact">
-              <button data-nav="projects">Contact</button>
+              <button data-nav="contact">Contact</button>
             </Link>
           </div>
         </div>
@@ -105,14 +101,14 @@ const Header = () => {
                 <button>CV</button>
               </Link>
               <Link to="/projects">
-                <button>Project</button>
+                <button>Projects</button>
               </Link>
             </div>
           </div>
         )}
       </div>
     </header>
-  );
-};
 
-export default Header;
+  )
+}
+
