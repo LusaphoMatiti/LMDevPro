@@ -35,9 +35,9 @@ const Navbar = () => {
               const { id, href, text } = link;
               return (
                 <li key={id}>
-                  <a to={href} className="nav-link">
+                  <Link to={href} className="nav-link">
                     {text}
-                  </a>
+                  </Link>
                 </li>
               );
             })}
@@ -85,10 +85,11 @@ const Navbar = () => {
 
         {homePageLinks.map((link) => {
           const { id, href, text } = link;
-
-          <a key={id} href={href}>
-            {text}
-          </a>;
+          return (
+            <a key={id} href={href}>
+              {text}
+            </a>
+          );
         })}
       </div>
     </>
