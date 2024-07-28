@@ -5,10 +5,11 @@ import { socialLinks } from "../data";
 import { homePageLinks } from "../data";
 
 const Navbar = () => {
-  const [isMenuActive, setIsMenuActive] = useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
+  // Function to toggle the menu
   const toggleMenu = () => {
-    setIsMenuActive(!isMenuActive);
+    setShowMenu(!showMenu);
   };
 
   return (
