@@ -1,6 +1,6 @@
 import React from "react";
-import "../Styling/Navbar.css";
-import "../Styling/Contact.css";
+import "../styling/Navbar.css";
+import "../styling/Contact.css";
 
 const Contact = () => {
   return (

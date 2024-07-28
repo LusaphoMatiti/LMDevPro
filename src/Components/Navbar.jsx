@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../Styling/Navbar.css";
+import "../styling/Navbar.css";
 import { socialLinks } from "../data";
 import { homePageLinks } from "../data";
 
@@ -94,4 +94,4 @@ const Navbar = () => {
   );
 };
 
-export default Header;
+export default Navbar;
