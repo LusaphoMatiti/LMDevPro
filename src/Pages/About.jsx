@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../Styling/Header.css";
-import "../Styling/About.css";
+import "../styling/Navbar.css";
+import "../styling/About.css";
 
 const About = () => {
   const [scrollY, setScrollY] = useState(0);

@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../components/Header";
+import Navbar from "../Components/Navbar";
 import About from "./About";
 import Contact from "./Contact";
 import CV from "./CV";
@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
       <LandPage />
-      <Header />
+      <Navbar />
       <About />
       <Projects />
       <CV />

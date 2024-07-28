@@ -1,5 +1,5 @@
 import React from "react";
-import "../styling/Header.css";
+import "../styling/Navbar.css";
 import "../styling/CV.css";
 
 const CV = () => {
