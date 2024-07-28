@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../Styling/Header.css";
-import "../Styling/LandPage.css";
+import "../styling/Navbar.css";
+import "../styling/LandPage.css";
 
 const LandPage = () => {
   const [scrollY, setScrollY] = useState(0);

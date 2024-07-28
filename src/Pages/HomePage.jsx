@@ -1,17 +1,17 @@
 import React from "react";
-import Header from "../Components/Header";
+import Navbar from "../Components/Navbar";
 import About from "./About";
 import Contact from "./Contact";
 import CV from "./CV";
 import Projects from "./Projects";
-import "../Styling/Header.css";
+import "../styling/Navbar.css";
 import LandPage from "./LandPage";
 
 const Home = () => {
   return (
     <div>
       <LandPage />
-      <Header />
+      <Navbar />
       <About />
       <Projects />
       <CV />
