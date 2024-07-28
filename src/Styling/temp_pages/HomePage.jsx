@@ -4,7 +4,7 @@ import About from "./About";
 import Contact from "./Contact";
 import CV from "./CV";
 import Projects from "./Projects";
-import "../styling/Navbar.css";
+import "../Styling/Navbar.css";
 import LandPage from "./LandPage";
 
 const Home = () => {

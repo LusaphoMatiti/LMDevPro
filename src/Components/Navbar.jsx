@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styling/Navbar.css";
+import "../Styling/Navbar.css";
 import { socialLinks } from "../data";
 import { homePageLinks } from "../data";
 

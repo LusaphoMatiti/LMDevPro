@@ -1,6 +1,6 @@
 import React from "react";
-import "../styling/Navbar.css";
-import "../styling/Project.css";
+import "../Styling/Navbar.css";
+import "../Styling/Project.css";
 
 const Projects = () => {
   return (
