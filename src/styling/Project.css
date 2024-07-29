@@ -28,7 +28,7 @@ a {
 }
 
 .project-item {
-  width: calc(33.33% - 50px);
+  width: calc(33.33% - 10px);
   padding-bottom: calc(33.33% - 30px); /* Aspect ratio 1:1 */
   position: relative;
   background-color: #8c8c8c;
