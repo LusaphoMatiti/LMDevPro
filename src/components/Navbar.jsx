@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../images/LM.svg";
 import "../styling/Navbar.css";
 
 import { socialLinks, homePageLinks } from "../data";
@@ -18,7 +19,7 @@ const Navbar = () => {
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/">
-              <img src="/LM.jpg" alt="Logo" className="nav-logo" />
+              <img src={logo} alt="Logo" className="nav-logo" />
             </Link>
 
             <button
