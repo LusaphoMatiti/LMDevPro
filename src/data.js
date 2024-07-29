@@ -1,11 +1,9 @@
-
 export const homePageLinks = [
   { id: 1, href: "#about", text: "About" },
   { id: 2, href: "#contact", text: "Contact" },
   { id: 3, href: "#CV", text: "CV" },
   { id: 4, href: "#projects", text: "Project" },
 ];
-
 
 export const socialLinks = [
   {
