@@ -4,11 +4,13 @@ import About from "./pages/About";
 import CV from "./pages/CV";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
+import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route
           path="/"
