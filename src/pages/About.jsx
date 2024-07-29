@@ -54,7 +54,7 @@ const About = () => {
             className={animationIndex[0] ? "animate" : ""}
             style={{
               transitionDelay: `${animationIndex[0] ? "0s" : "1s"}`, // Delay the first paragraph animation
-              transform: `translateX(-${Math.max(0, scrollY - 700) * 0.05}px)`, // Animate from left
+              transform: `translateX(-${Math.max(0, scrollY - 300) * 0.05}px)`, // Animate from left
             }}
           >
             Hey there, I'm Lusapho Matiti, but you can just call me 'Ludz'. As a
