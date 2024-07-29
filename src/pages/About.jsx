@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../styling/Navbar.css";
 import "../styling/About.css";
 
 const About = () => {

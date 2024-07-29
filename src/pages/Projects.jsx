@@ -1,5 +1,4 @@
 import React from "react";
-import "../styling/Navbar.css";
 import "../styling/Project.css";
 
 const Projects = () => {
