@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "./components/Navbar";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import CV from "../pages/CV";
@@ -10,8 +10,8 @@ import LandPage from "../pages/LandPage";
 const HomePage = () => {
   return (
     <div>
-      <LandPage />
       <Navbar />
+      <LandPage />
       <About />
       <Projects />
       <CV />
