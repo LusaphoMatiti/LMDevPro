@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styling/Navbar.css";
+import logo from ".LM.jpg";
 import { socialLinks, homePageLinks } from "../data";
 
 const Navbar = () => {
@@ -17,7 +18,7 @@ const Navbar = () => {
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/">
-              <img src="LM.jpg" alt="Logo" className="nav-logo" />
+              <img src={logo} alt="Logo" className="nav-logo" />
             </Link>
 
             <button
