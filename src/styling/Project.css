@@ -16,6 +16,7 @@ a {
 
 .projects h3 {
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -28,8 +29,8 @@ a {
 }
 
 .project-item {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   position: relative;
   background-color: #8c8c8c;
   padding: 20px;
