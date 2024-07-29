@@ -38,16 +38,13 @@ const Navbar = () => {
           </div>
 
           <ul className="nav-links" id="nav-links">
-            {pageLinks.map((link) => {
-              const { id, href, text } = link;
-              return (
-                <li key={id}>
-                  <Link to={href} className="nav-link">
-                    {text}
-                  </Link>
-                </li>
-              );
-            })}
+            {pageLinks.map((link) => (
+              <li key={link.id}>
+                <a href={link.href} className="nav-link">
+                  {link.text}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <ul className="nav-icons">
