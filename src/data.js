@@ -1,8 +1,15 @@
 export const homePageLinks = [
   { id: 1, href: "#about", text: "About" },
-  { id: 2, href: "#contact", text: "Contact" },
+  { id: 2, href: "#projects", text: "Projects" },
   { id: 3, href: "#CV", text: "CV" },
-  { id: 4, href: "#projects", text: "Project" },
+  { id: 4, href: "#contact", text: "Contact" },
+];
+
+export const otherPageLinks = [
+  { id: 1, href: "/about", text: "About" },
+  { id: 2, href: "/projects", text: "Projects" },
+  { id: 3, href: "/CV", text: "CV" },
+  { id: 4, href: "/contact", text: "Contact" },
 ];
 
 export const socialLinks = [

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import logo from "../images/LM.svg";
 import "../styling/Navbar.css";
 
-import { socialLinks, homePageLinks } from "../data";
+import { socialLinks, homePageLinks, otherPageLinks } from "../data";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -85,7 +85,7 @@ const Navbar = () => {
           <i className="fas fa-times"></i>
         </button>
 
-        {homePageLinks.map((link) => {
+        {otherPageLinks.map((link) => {
           const { id, href, text } = link;
           return (
             <a key={id} href={href}>
