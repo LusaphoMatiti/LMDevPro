@@ -3,7 +3,7 @@ import "../styling/Project.css";
 
 const Projects = () => {
   return (
-    <div className="section projects">
+    <div className="section projects" id="projects">
       <h3>My Projects</h3>
       <div className="projects-grid">
         <div className="project-item">

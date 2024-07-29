@@ -16,7 +16,7 @@ const LandPage = () => {
   }, []);
 
   return (
-    <div className="section landpage">
+    <div className="section landpage" id="landpage">
       <div className="land-content">
         <div
           className="land-img"

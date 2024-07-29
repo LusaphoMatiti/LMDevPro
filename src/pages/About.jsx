@@ -35,7 +35,7 @@ const About = () => {
   }, [animationIndex]);
 
   return (
-    <div className="section about">
+    <div className="section about" id="about">
       <div className="blurry-background"></div>
 
       <div className="about-content">

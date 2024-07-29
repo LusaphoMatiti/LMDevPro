@@ -3,7 +3,7 @@ import "../styling/CV.css";
 
 const CV = () => {
   return (
-    <div className="section cv">
+    <div className="section cv" id="cv">
       <div className="title">
         <h2>My Curriculum Vitae</h2>
       </div>
