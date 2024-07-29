@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   color: #fff;
-  background-color: linear-gradient(to bottom, #b7eaff, #86b9d9);
+  background: linear-gradient(to bottom, #b7eaff, #86b9d9);
 }
 
 .nav-icons {
