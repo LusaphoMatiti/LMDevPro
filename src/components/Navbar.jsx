@@ -85,14 +85,11 @@ const Navbar = () => {
           <i className="fas fa-times"></i>
         </button>
 
-        {otherPageLinks.map((link) => {
-          const { id, href, text } = link;
-          return (
-            <a key={id} href={href}>
-              {text}
-            </a>
-          );
-        })}
+        {otherPageLinks.map((link) => (
+          <a key={link.id} href={link.href}>
+            {link.text}
+          </a>
+        ))}
       </div>
     </>
   );

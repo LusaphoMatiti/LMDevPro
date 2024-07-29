@@ -8,7 +8,7 @@ export const homePageLinks = [
 export const otherPageLinks = [
   { id: 1, href: "/about", text: "About" },
   { id: 2, href: "/projects", text: "Projects" },
-  { id: 3, href: "/CV", text: "CV" },
+  { id: 3, href: "/cv", text: "CV" },
   { id: 4, href: "/contact", text: "Contact" },
 ];
 
