@@ -14,10 +14,6 @@ ul {
 a {
   text-decoration: none;
 }
-img:not(.nav-logo) {
-  width: 100%;
-  display: block;
-}
 
 .navbar {
   position: fixed;
