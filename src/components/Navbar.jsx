@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../images/LM.svg";
 import "../styling/Navbar.css";
 
@@ -7,6 +7,11 @@ import { socialLinks, homePageLinks, otherPageLinks } from "../data";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+
+  const location = useLocation();
+  const isHomePage = location.pathname === "/";
+
+  const pageLinks = isHomePage ? homePageLinks : otherPageLinks;
 
   // Function to toggle the menu
   const toggleMenu = () => {
@@ -85,7 +90,7 @@ const Navbar = () => {
           <i className="fas fa-times"></i>
         </button>
 
-        {otherPageLinks.map((link) => (
+        {pageLinks.map((link) => (
           <a key={link.id} href={link.href}>
             {link.text}
           </a>
