@@ -38,7 +38,7 @@ const Navbar = () => {
           </div>
 
           <ul className="nav-links" id="nav-links">
-            {homePageLinks.map((link) => {
+            {otherPageLinks.map((link) => {
               const { id, href, text } = link;
               return (
                 <li key={id}>
