@@ -10,8 +10,10 @@ body {
   display: flex;
   justify-content: center;
   position: relative; /* Establishes positioning context */
+  align-items: center;
   min-height: 120vh; /* Adjust the height of the section as needed */
   width: 100%; /* Ensure the section spans the entire width */
+  overflow: hidden;
 }
 
 .blurry-background {
@@ -38,6 +40,8 @@ body {
   text-align: justify;
   padding: 20px;
   box-sizing: border-box;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  transform: translateX(0);
 }
 
 .paragraphs {
