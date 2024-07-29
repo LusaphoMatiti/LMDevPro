@@ -16,8 +16,7 @@ a {
 
 .projects h3 {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 5px;
+  margin-bottom: 50px;
 }
 
 .projects-grid {
@@ -26,12 +25,11 @@ a {
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 10px;
 }
 
 .project-item {
-  width: calc(33.33% - 40px);
-  padding-bottom: calc(33.33% - 40px); /* Aspect ratio 1:1 */
+  width: calc(33.33% - 30px);
+  padding-bottom: calc(33.33% - 30px); /* Aspect ratio 1:1 */
   position: relative;
   background-color: #8c8c8c;
   padding: 20px;
