@@ -15,7 +15,7 @@ const Projects = () => {
         </div>
         <div className="project-item">
           <img src="hand.png" alt="Project 2 Icon" />
-          <h3>Personal Finance Tracker</h3>
+          <h3>Finance Tracker</h3>
           <a style={{ textDecoration: "none" }} href="http://">
             View Project
           </a>
