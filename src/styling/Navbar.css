@@ -106,14 +106,14 @@
     margin-right: 0.7rem;
   }
 
-  .nav-icons {
+  .nav-icon {
     margin-right: 0.7rem;
     color: white;
     font-size: 1.2rem;
     transition: var(--transition);
   }
 
-  .nav-icons:hover {
+  .nav-icon:hover {
     color: white;
   }
 }
