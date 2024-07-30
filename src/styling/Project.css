@@ -20,7 +20,7 @@ a {
   margin-bottom: 50px;
 }
 
-.projects-grid {
+.project-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -87,7 +87,7 @@ a {
 }
 
 @media screen and (max-width: 992px) {
-  .projects-grid {
+  .project-grid {
     flex-direction: column;
     align-items: center;
   }
@@ -98,7 +98,7 @@ a {
     background-size: cover; /* Maintain size and aspect ratio */
   }
 
-  .projects-grid {
+  .project-grid {
     width: 90vw;
     margin: 0 auto;
     max-width: 1000px;
@@ -116,7 +116,7 @@ a {
     background-size: cover; /* Maintain size and aspect ratio */
   }
 
-  .projects-grid {
+  .project-grid {
     width: 90vw;
     margin: 0 auto;
     max-width: 1000px;
