@@ -61,18 +61,12 @@ a {
 }
 
 .project-item h3 {
-  position: absolute;
-  bottom: 50px;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-bottom: 1rem;
 }
 
 .project-item a {
   color: #fff;
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
+  text-decoration: none;
 }
 
 .projects {
@@ -105,6 +99,11 @@ a {
     margin: 0 auto;
     max-width: 1000px;
   }
+
+  .project-item {
+    width: 150px; /* Adjust width for smaller screens */
+    height: 150px; /* Adjust height for smaller screens */
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -123,5 +122,10 @@ a {
     margin: 0 auto;
     max-width: 1000px;
     align-items: center;
+  }
+
+  .project-item {
+    width: 120px; /* Adjust width for even smaller screens */
+    height: 120px; /* Adjust height for even smaller screens */
   }
 }
