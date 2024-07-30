@@ -1,3 +1,7 @@
+import project1 from "./images/dumbbell.png";
+import project2 from "./images/garden.png";
+import project3 from "./images/finance.png";
+
 export const homePageLinks = [
   { id: 1, href: "#about", text: "About" },
   { id: 2, href: "#projects", text: "Projects" },
@@ -24,4 +28,25 @@ export const socialLinks = [
     icon: "fab fa-instagram",
   },
   { id: 3, href: "https://www.gmail.com", icon: "fas fa-envelope" },
+];
+
+export const projects = [
+  {
+    id: 1,
+    image: project1,
+    title: "Fitness Tracker",
+    text: "View project",
+  },
+  {
+    id: 2,
+    image: project2,
+    title: "Garden assistant",
+    text: "View project",
+  },
+  {
+    id: 3,
+    image: project3,
+    title: "Finance Tracker",
+    text: "View project",
+  },
 ];
