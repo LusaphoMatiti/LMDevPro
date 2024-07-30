@@ -35,18 +35,15 @@ export const projects = [
     id: 1,
     image: project1,
     title: "Fitness Tracker",
-    text: "View project",
   },
   {
     id: 2,
     image: project2,
     title: "Garden assistant",
-    text: "View project",
   },
   {
     id: 3,
     image: project3,
     title: "Finance Tracker",
-    text: "View project",
   },
 ];

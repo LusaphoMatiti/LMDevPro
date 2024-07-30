@@ -12,6 +12,12 @@ a {
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
+  align-items: center; /* Center the section content horizontally */
+  justify-content: center; /* Center the section content vertically */
+}
+
+.section-info {
+  text-align: center; /* Center text inside section-info */
 }
 
 .projects h3 {
@@ -58,6 +64,7 @@ a {
 .project-info {
   padding: 1.25rem 1.5rem;
   text-align: center;
+  font-size: 1rem;
 }
 
 .project-item h3 {
@@ -104,6 +111,10 @@ a {
     width: 150px; /* Adjust width for smaller screens */
     height: 150px; /* Adjust height for smaller screens */
   }
+  .project-info {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    padding: 0.75rem 1rem; /* Adjust padding for smaller screens */
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -127,5 +138,10 @@ a {
   .project-item {
     width: 120px; /* Adjust width for even smaller screens */
     height: 120px; /* Adjust height for even smaller screens */
+  }
+
+  .project-info {
+    font-size: 0.75rem; /* Adjust font size for even smaller screens */
+    padding: 0.5rem 0.75rem; /* Adjust padding for even smaller screens */
   }
 }
