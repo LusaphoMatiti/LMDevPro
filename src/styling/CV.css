@@ -66,12 +66,12 @@
 }
 
 .right {
-  background-color: white;
+  background-color: black;
   width: 90vh;
 }
 
 .line {
-  border-top: 1px solid black;
+  border-top: 1px solid white;
   margin: 20px 0;
 }
 
@@ -252,6 +252,8 @@
 
   .left {
     height: auto;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
   }
 
   .desc p {

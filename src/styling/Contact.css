@@ -12,9 +12,21 @@
 }
 
 .contact-details {
-  justify-content: flex-start;
-  margin-right: 300px;
-  margin-top: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0; /* Reset any margin you have applied */
+  position: absolute; /* Make it independent of other elements */
+  top: 50%; /* Position it at the center vertically */
+  left: 50%; /* Position it at the center horizontally */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Adjust the position back to the exact center */
+  width: 100%; /* Ensure it doesn't exceed the screen width */
+  height: 100%; /* Ensure it doesn't exceed the screen height */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .contact-item {
@@ -49,9 +61,21 @@
 
 @media screen and (max-width: 768px) {
   .contact-details {
-    justify-content: flex-start;
-    margin-right: 30px;
-    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Reset any margin you have applied */
+    position: absolute; /* Make it independent of other elements */
+    top: 50%; /* Position it at the center vertically */
+    left: 50%; /* Position it at the center horizontally */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Adjust the position back to the exact center */
+    width: 100%; /* Ensure it doesn't exceed the screen width */
+    height: 100%; /* Ensure it doesn't exceed the screen height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
 
   .contact {
@@ -63,10 +87,46 @@
   .contact {
     background-size: cover; /* Maintain size and aspect ratio */
   }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Reset any margin you have applied */
+    position: absolute; /* Make it independent of other elements */
+    top: 50%; /* Position it at the center vertically */
+    left: 50%; /* Position it at the center horizontally */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Adjust the position back to the exact center */
+    width: 100%; /* Ensure it doesn't exceed the screen width */
+    height: 100%; /* Ensure it doesn't exceed the screen height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  }
 }
 
 @media screen and (max-width: 1024px) {
   .contact {
     background-size: cover; /* Maintain size and aspect ratio */
+  }
+
+  .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0; /* Reset any margin you have applied */
+    position: absolute; /* Make it independent of other elements */
+    top: 50%; /* Position it at the center vertically */
+    left: 50%; /* Position it at the center horizontally */
+    transform: translate(
+      -50%,
+      -50%
+    ); /* Adjust the position back to the exact center */
+    width: 100%; /* Ensure it doesn't exceed the screen width */
+    height: 100%; /* Ensure it doesn't exceed the screen height */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
   }
 }
