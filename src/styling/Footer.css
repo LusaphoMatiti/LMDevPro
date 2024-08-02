@@ -1,8 +1,10 @@
 .footer {
-  background: var(--clr-grey-1);
+  background: #8c8c8c;
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .footer-links,
 .footer-icons {
@@ -14,8 +16,8 @@
 .footer-link {
   color: var(--clr-white);
   text-transform: capitalize;
-  font-size: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1.3rem;
   letter-spacing: var(--spacing);
   transition: var(--transition);
 }
@@ -23,7 +25,7 @@
   color: var(--clr-primary-5);
 }
 .footer-icon {
-  font-size: 2rem;
+  font-size: 1.3rem;
   margin-right: 1rem;
   color: var(--clr-white);
   transition: var(--transition);
