@@ -1,133 +1,92 @@
 .contact {
-  background-image: url("../images/contact.jpeg"); /* Replace with the path to your contact image */
+  background-image: url("../images/contact.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh; /* Adjust the height of the section as needed */
-  width: 100%; /* Ensure the section spans the entire width */
+  height: 100vh;
+  width: 100%;
   position: relative;
-  -webkit-background-size: cover;
   background-attachment: fixed;
   transform: translateZ(0);
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .contact-details {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0; /* Reset any margin you have applied */
-  position: absolute; /* Make it independent of other elements */
-  top: 50%; /* Position it at the center vertically */
-  left: 50%; /* Position it at the center horizontally */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Adjust the position back to the exact center */
-  width: 100%; /* Ensure it doesn't exceed the screen width */
-  height: 100%; /* Ensure it doesn't exceed the screen height */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 .contact-item {
-  display: flex; /* Display items in a row */
-  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .contact-item img {
-  width: 24px; /* Set the width of the icons */
-  height: 24px; /* Set the height of the icons */
-  margin-right: 8px; /* Add spacing between icon and text */
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
   filter: brightness(0) invert(1);
 }
 
-.contact-details h2 {
-  margin-bottom: 50px;
-}
-
-.s-me h3 {
-  margin-bottom: 50px;
-}
-
 .contact-item p {
-  margin: 0; /* Remove default margin */
+  margin: 0;
+  margin-right: 8px;
 }
 
 .myDetails {
-  display: flex; /* Display items in a column */
-  flex-direction: column; /* Arrange items vertically */
-  align-items: flex-start; /* Align items to the start of the column */
-  margin-left: 20px; /* Adjust as needed */
+  display: inline-block;
+}
+
+.s-me h3 {
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
-  .contact-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0; /* Reset any margin you have applied */
-    position: absolute; /* Make it independent of other elements */
-    top: 50%; /* Position it at the center vertically */
-    left: 50%; /* Position it at the center horizontally */
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Adjust the position back to the exact center */
-    width: 100%; /* Ensure it doesn't exceed the screen width */
-    height: 100%; /* Ensure it doesn't exceed the screen height */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  .contact-card {
+    width: 90%;
+    padding: 15px;
   }
 
-  .contact {
-    background-size: cover; /* Maintain size and aspect ratio */
+  .contact-item img {
+    margin-right: 12px;
+  }
+
+  .contact-item p {
+    margin-right: 6px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .contact {
-    background-size: cover; /* Maintain size and aspect ratio */
+  .contact-card {
+    width: 95%;
+    padding: 10px;
   }
 
-  .contact-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0; /* Reset any margin you have applied */
-    position: absolute; /* Make it independent of other elements */
-    top: 50%; /* Position it at the center vertically */
-    left: 50%; /* Position it at the center horizontally */
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Adjust the position back to the exact center */
-    width: 100%; /* Ensure it doesn't exceed the screen width */
-    height: 100%; /* Ensure it doesn't exceed the screen height */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .contact {
-    background-size: cover; /* Maintain size and aspect ratio */
+  .contact-item {
+    margin-bottom: 15px;
   }
 
-  .contact-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0; /* Reset any margin you have applied */
-    position: absolute; /* Make it independent of other elements */
-    top: 50%; /* Position it at the center vertically */
-    left: 50%; /* Position it at the center horizontally */
-    transform: translate(
-      -50%,
-      -50%
-    ); /* Adjust the position back to the exact center */
-    width: 100%; /* Ensure it doesn't exceed the screen width */
-    height: 100%; /* Ensure it doesn't exceed the screen height */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  .contact-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .contact-item p {
+    margin-right: 4px;
   }
 }
