@@ -1,4 +1,4 @@
-import { pageLinks, socialLinks } from "../data";
+import { otherPageLinks, socialLinks } from "../data";
 import "../styling/Footer.css";
 
 const Footer = () => {
@@ -6,7 +6,7 @@ const Footer = () => {
     <div>
       <footer className="section footer">
         <ul className="footer-links">
-          {pageLinks.map((link) => {
+          {otherPageLinks.map((link) => {
             const { id, href, text } = link;
 
             return (
