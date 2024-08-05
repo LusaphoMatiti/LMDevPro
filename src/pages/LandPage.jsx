@@ -27,7 +27,9 @@ const LandPage = () => {
           <img src="Ludz.jpg" alt="hb" />
         </div>
         <div className="animate-left">
-          <h1>Hi, I'm Lusapho.</h1>
+          <h1>
+            Hi, I'm <span>LUSAPHO</span>
+          </h1>
           <h2>Let's build something awesome together!</h2>
         </div>
       </div>
