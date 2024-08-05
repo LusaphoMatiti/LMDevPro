@@ -1,9 +1,11 @@
 import React from "react";
 import "../styling/CV.css";
+import Title from "../components/Title";
 
 const CV = () => {
   return (
     <div className="section cv" id="cv">
+      <Title title="my" subTitle="cv" />
       <section className="top-section">
         <div className="profile-img">
           <img src="Ludz.jpg" alt="hb" />

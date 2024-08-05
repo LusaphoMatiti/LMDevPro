@@ -1,5 +1,6 @@
 import React from "react";
 import "../styling/About.css";
+import Title from "../components/Title";
 
 const About = () => {
   return (
@@ -7,7 +8,7 @@ const About = () => {
       <div className="blurry-background"></div>
       <div className="about-content">
         <div className="about-title">
-          <h3>About Lusapho</h3>
+          <Title title="About" subTitle="Lusapho" />
         </div>
         <div className="paragraphs">
           <p>

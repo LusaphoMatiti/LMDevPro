@@ -21,7 +21,6 @@
   padding: 50px;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
-  margin-top: 250px;
 }
 
 .spacer {
@@ -108,7 +107,6 @@
   .top-section {
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
     padding: 20px;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
@@ -178,7 +176,7 @@
   .top-section {
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 40px;
     padding: 20px;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
@@ -279,7 +277,7 @@
 @media (max-width: 375px) {
   .top-section {
     padding: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .profile-img img {

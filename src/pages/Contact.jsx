@@ -1,10 +1,11 @@
 import React from "react";
 import "../styling/Contact.css";
+import Title from "../components/Title";
 
 const Contact = () => {
   return (
     <div class="section contact" id="contact">
-      <h2>Contact me</h2>
+      <Title title="contact" subTitle="me" />
       <div class="contact-card">
         <div class="c-me">
           <div class="contact-item">

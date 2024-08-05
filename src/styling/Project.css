@@ -18,6 +18,7 @@ a {
 
 .section-info {
   text-align: center; /* Center text inside section-info */
+  margin-top: 50px;
 }
 
 .projects h3 {
@@ -93,6 +94,13 @@ a {
   .project-grid {
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    width: 40vw;
+  }
+
+  .project-item {
+    width: 150px; /* Adjust width for smaller screens */
+    height: 150px; /* Adjust height for smaller screens */
   }
 }
 

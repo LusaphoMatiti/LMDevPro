@@ -1,12 +1,13 @@
 import React from "react";
 import { projects } from "../data";
 import "../styling/Project.css";
+import Title from "../components/Title";
 
 const Projects = () => {
   return (
     <div className="section projects" id="projects">
       <div className="section-info">
-        <h3>My Projects</h3>
+        <Title title="my" subTitle="projects" />
         <section className="project-grid">
           {projects.map((project) => {
             const { id, image, title } = project;

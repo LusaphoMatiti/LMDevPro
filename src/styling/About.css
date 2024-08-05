@@ -31,7 +31,7 @@ body {
 }
 
 .about-content {
-  margin-top: 100px;
+  margin-top: 80px;
   align-content: center;
   max-width: 700px; /* Adjust the value to your desired width */
   /* Centers the container horizontally */
@@ -48,11 +48,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; /* Center paragraphs horizontally */
-}
-
-.about-title h3 {
-  text-align: center;
-  margin-bottom: 50px;
 }
 
 .paragraphs p {
@@ -78,14 +73,9 @@ body {
 @media screen and (max-width: 768px) {
   /* Adjust styles for screens smaller than 768px */
   .about-content {
-    margin-top: 60px;
+    margin-top: 50px;
     padding: 10px;
     max-width: 90%; /* Adjust the value to your desired width */
-  }
-
-  .about-title h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
   }
 
   .paragraphs {
@@ -100,14 +90,9 @@ body {
 
 @media screen and (max-width: 480px) {
   .about-content {
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 10px;
     max-width: 95%;
-  }
-
-  .about-title h3 {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
   }
 
   .paragraphs p {
