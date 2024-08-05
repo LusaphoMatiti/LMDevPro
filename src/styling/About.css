@@ -26,7 +26,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: blur(14px); /* Adjust the blur intensity as needed */
+  filter: blur(12px); /* Adjust the blur intensity as needed */
   z-index: 0;
 }
 
