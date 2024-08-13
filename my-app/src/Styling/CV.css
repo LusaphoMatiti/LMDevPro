@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Cookie&display=swap");
+
 .cv {
   background-image: url("../images/cv.jpeg"); /* Replace with the path to your CV image */
   background-size: cover;
@@ -10,42 +12,65 @@
   box-sizing: border-box;
 }
 
-.myCV {
+.top-section {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
+  width: 150vh;
+  align-items: center;
+  background-color: #8c8c8c;
+  padding: 50px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.spacer {
+  width: 200px;
+}
+
+.profile-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 100px;
+}
+
+.desc h2 {
+  font-size: 2.3em;
+}
+
+.desc p {
+  font-size: 2em;
+  font-family: "Cookie", cursive;
+  color: #89bcdb;
+}
+
+.bottom-section {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 40px;
-  max-width: 110vh;
-  overflow-y: auto;
-  margin: 0;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 50px;
+  box-sizing: border-box;
 }
 
 .left {
-  flex: 1; /* Allow the left div to grow to fill available space */
-  padding-right: 30px; /* Add padding to create space between left and right div */
-  background-color: #8c8c8c;
-  align-items: center;
-  padding-left: 20px;
-  padding-bottom: 30px;
-  max-width: 200px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  background-color: #89bcdb;
+  width: 60vh;
 }
 
 .right {
-  flex: 1; /* Allow the right div to grow to fill available space */
-  padding-left: 20px; /* Add padding to create space between left and right div */
-  padding-right: 30px;
-  background-color: #ffffff;
-  max-width: 90%;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  background-color: black;
+  width: 90vh;
 }
 
 .line {
-  border-top: 1px solid black;
+  border-top: 1px solid white;
   margin: 20px 0;
 }
 
@@ -54,78 +79,255 @@
 }
 
 .education {
-  margin-bottom: 25px;
+  margin-bottom: 80px;
 }
 
-.education h4 {
-  padding-left: 2px;
+.right h3,
+.left h3 {
+  margin-top: 30px;
 }
 
-@media screen and (max-width: 1200px) {
-  .myCV {
-    max-width: 90vw;
+.right h4,
+.left h4 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.right h5 {
+  margin-bottom: 8px;
+}
+
+.left p,
+.right p {
+  margin-top: 5px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 100%;
   }
 
-  .left,
-  .right {
-    padding: 15px;
+  .profile-img img {
+    margin-top: 30px;
+    width: 150px;
+    height: 150px;
   }
-}
 
-@media screen and (max-width: 768px) {
-  .myCV {
+  .spacer {
+    margin-bottom: 30px;
+  }
+
+  .desc h2 {
+    font-size: 1.8em;
+  }
+
+  .desc p {
+    font-size: 1.5em;
+  }
+
+  .bottom-section {
     flex-direction: column;
   }
 
   .left,
   .right {
-    max-width: 100%;
+    width: 100%;
+    border-radius: 0;
     padding: 20px;
-    margin: 10px 0;
+    margin: 0;
+    height: auto;
+  }
+
+  .left {
+    order: 2; /* Ensure this comes after .right on smaller screens */
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-bottom: 50px;
+  }
+
+  .left h3,
+  .right h3 {
+    font-size: 1.5em;
+  }
+
+  .left h4,
+  .right h4 {
+    font-size: 1.2em;
+  }
+
+  .left p,
+  .right p {
+    font-size: 1em;
+  }
+
+  .right {
+    order: 1;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .cv {
-    padding: 10px;
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+  .top-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    width: 100%;
   }
 
-  .myCV {
-    padding: 10px;
+  .profile-img img {
+    margin-top: 30px;
+  }
+
+  .spacer {
+    margin-bottom: 30px;
+  }
+
+  .desc h2 {
+    font-size: 1.8em;
+  }
+
+  .desc p {
+    font-size: 1.5em;
+  }
+
+  .bottom-section {
+    flex-direction: column;
   }
 
   .left,
   .right {
+    width: 100%;
+    border-radius: 0;
+    padding: 20px;
+    margin: 0;
+    height: auto;
+  }
+
+  .left {
+    order: 2; /* Ensure this comes after .right on smaller screens */
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    margin-bottom: 50px;
+  }
+
+  .left h3,
+  .right h3 {
+    font-size: 1.5em;
+  }
+
+  .left h4,
+  .right h4 {
+    font-size: 1.2em;
+  }
+
+  .left p,
+  .right p {
+    font-size: 1em;
+  }
+
+  .right {
+    order: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .desc h2 {
+    font-size: 1.5em;
+  }
+
+  .right {
+    height: auto;
+  }
+
+  .left {
+    height: auto;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .desc p {
+    font-size: 1.2em;
+  }
+
+  .left h3,
+  .right h3 {
+    font-size: 1.2em;
+  }
+
+  .left h4,
+  .right h4 {
+    font-size: 1em;
+  }
+
+  .left p,
+  .right p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 375px) {
+  .top-section {
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  .profile-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .desc h2 {
+    font-size: 1.4em;
+  }
+
+  .desc p {
+    font-size: 1.1em;
+  }
+
+  .bottom-section {
+    flex-direction: column;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+    border-radius: 0;
     padding: 15px;
+    margin: 0;
+    height: auto;
   }
 
-  h3,
-  h4,
-  h5,
-  p {
-    font-size: 14px;
+  .left {
+    order: 2;
+    margin-bottom: 0;
   }
 
-  ul li {
-    font-size: 14px;
+  .right {
+    order: 1;
+    margin-bottom: 0;
   }
-}
 
-.line {
-  border-top: 1px solid black;
-  margin: 20px 0;
-}
+  .left h3,
+  .right h3 {
+    font-size: 1.3em;
+  }
 
-.education-info p {
-  margin: 5px;
-}
+  .left h4,
+  .right h4 {
+    font-size: 1em;
+  }
 
-.education {
-  padding-right: 20px;
-  margin-bottom: 25px;
-}
-
-.education h4 {
-  padding-left: 2px;
+  .left p,
+  .right p {
+    font-size: 0.9em;
+  }
 }

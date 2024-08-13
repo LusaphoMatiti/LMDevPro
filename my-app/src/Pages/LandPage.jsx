@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../Styling/Header.css";
-import "../Styling/LandPage.css";
+import "../styling/LandPage.css";
 
 const LandPage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -17,7 +16,7 @@ const LandPage = () => {
   }, []);
 
   return (
-    <div className="section landpage">
+    <div className="section landpage" id="landpage">
       <div className="land-content">
         <div
           className="land-img"
@@ -28,7 +27,9 @@ const LandPage = () => {
           <img src="Ludz.jpg" alt="hb" />
         </div>
         <div className="animate-left">
-          <h1>Hi, I'm Lusapho.</h1>
+          <h1>
+            Hi, I'm <span>LUSAPHO</span>
+          </h1>
           <h2>Let's build something awesome together!</h2>
         </div>
       </div>

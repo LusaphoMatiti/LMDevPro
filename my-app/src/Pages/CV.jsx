@@ -1,23 +1,30 @@
 import React from "react";
-import "../Styling/Header.css";
-import "../Styling/CV.css";
+import "../styling/CV.css";
+import Title from "../components/Title";
 
 const CV = () => {
   return (
-    <div className="section cv">
-      <div className="title">
-        <h2>My Curriculum Vitae</h2>
-      </div>
-
-      <div className="myCV">
+    <div className="section cv" id="cv">
+      <Title title="my" subTitle="cv" />
+      <section className="top-section">
+        <div className="profile-img">
+          <img src="Ludz.jpg" alt="hb" />
+        </div>
+        <div className="spacer"></div>
+        <div className="desc">
+          <h2>Lusapho Matiti</h2>
+          <p>Front-End Developer</p>
+        </div>
+      </section>
+      <section className="bottom-section">
         <div className="left">
           <h3>Education</h3>
           <div className="education">
             <ul>
               <li>
                 <h4>
-                  National Certificate: IT Systems Developer NQF5 - Full Stack
-                  Web and Software Developer
+                  National Certificate: Systems Developement - Full Stack Web
+                  and Software Developer
                 </h4>
                 <div className="vertical-line"></div>
                 <div className="education-info">
@@ -56,6 +63,7 @@ const CV = () => {
           <p>Search Engine Optimization</p>
           <p>Data Analysis</p>
         </div>
+
         <div className="right">
           <h3>Summary</h3>
           <div className="line"></div>
@@ -92,7 +100,7 @@ const CV = () => {
           <div className="line"></div>
           <p>References avaliable upon request.</p>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

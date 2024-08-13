@@ -1,17 +1,16 @@
 import React from "react";
-import Header from "../Components/Header";
-import About from "./About";
-import Contact from "./Contact";
-import CV from "./CV";
-import Projects from "./Projects";
-import "../Styling/Header.css";
-import LandPage from "./LandPage";
+import Navbar from "./components/Navbar";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import CV from "../pages/CV";
+import Projects from "../pages/Projects";
+import LandPage from "../pages/LandPage";
 
-const Home = () => {
+const HomePage = () => {
   return (
     <div>
+      <Navbar />
       <LandPage />
-      <Header />
       <About />
       <Projects />
       <CV />
@@ -20,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
