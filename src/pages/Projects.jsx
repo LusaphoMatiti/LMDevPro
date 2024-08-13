@@ -10,7 +10,7 @@ const Projects = () => {
         <Title title="my" subTitle="projects" />
         <section className="project-grid">
           {projects.map((project) => {
-            const { id, image, title } = project;
+            const { id, image, title, href } = project;
 
             return (
               <article key={id} className="project-item">
@@ -18,6 +18,7 @@ const Projects = () => {
                 <div className="project-info">
                   <div className="project-title">
                     <h3>{title}</h3>
+                    <a href={href}>view</a>
                   </div>
                 </div>
               </article>
