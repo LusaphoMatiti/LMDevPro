@@ -40,7 +40,7 @@ export const projects = [
   {
     id: 2,
     image: project2,
-    title: "Garden assistant",
+    title: "Garden assist",
     href: "https://garden-lusapho.netlify.app",
   },
   {
