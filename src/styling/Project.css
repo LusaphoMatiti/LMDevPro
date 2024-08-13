@@ -155,7 +155,7 @@ a {
 
   .project-item {
     width: 140px; /* Adjust width for even smaller screens */
-    height: 140px; /* Adjust height for even smaller screens */
+    height: 160px; /* Adjust height for even smaller screens */
   }
 
   .project-info {
