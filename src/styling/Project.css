@@ -99,15 +99,15 @@ a {
   }
 
   .project-item {
-    width: 150px; /* Adjust width for smaller screens */
-    height: 150px; /* Adjust height for smaller screens 
+    width: 160px; /* Adjust width for smaller screens */
+    height: 160px; /* Adjust height for smaller screens 
   */
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
   }
 
   .project-info {
-    font-size: 0.9rem; /* Adjust font size */
-    padding: 0.75rem; /* Adjust padding */
+    font-size: 0.8rem; /* Adjust font size */
+    padding: 0.6rem; /* Adjust padding */
   }
 }
 

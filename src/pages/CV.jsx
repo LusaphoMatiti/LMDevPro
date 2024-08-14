@@ -13,7 +13,7 @@ const CV = () => {
         <div className="spacer"></div>
         <div className="desc">
           <h2>Lusapho Matiti</h2>
-          <p>Front-End Developer</p>
+          <p>Full-Stack Developer</p>
         </div>
       </section>
       <section className="bottom-section">
@@ -55,10 +55,9 @@ const CV = () => {
           <p>JavaScript</p>
           <p>HTML5</p>
           <p>CSS</p>
-          <p>Java</p>
           <p>MySQL</p>
           <p>Digital Literacy</p>
-          <p>CopyWriting</p>
+          <p>Copy Writing</p>
           <p>Database Development</p>
           <p>Search Engine Optimization</p>
           <p>Data Analysis</p>
@@ -83,7 +82,7 @@ const CV = () => {
             </li>
             <li>proofreading and editing copy from other writers.</li>
           </ul>
-          <h4>Sheet Metal Op/Health and Safety Rep.</h4>
+          <h4>S.M.O/Health and Safety Rep.</h4>
           <h5>Nov 2018 - Dec 2020</h5>
           <ul>
             <li>

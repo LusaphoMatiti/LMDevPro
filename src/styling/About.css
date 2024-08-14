@@ -53,7 +53,7 @@ body {
 .paragraphs p {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   line-height: 1.6;
   transition: transform 0.6s ease, opacity 0.6 ease;
 }
@@ -84,7 +84,7 @@ body {
 
   .paragraphs p {
     font-size: 0.9rem;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
   }
 }
 
@@ -97,6 +97,6 @@ body {
 
   .paragraphs p {
     font-size: 0.8rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 }
