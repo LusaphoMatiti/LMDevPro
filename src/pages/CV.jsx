@@ -13,7 +13,7 @@ const CV = () => {
         <div className="spacer"></div>
         <div className="desc">
           <h2>Lusapho Matiti</h2>
-          <p>Full-Stack Developer</p>
+          <p>Front-End Developer</p>
         </div>
       </section>
       <section className="bottom-section">
