@@ -4,6 +4,24 @@ body {
   padding: 0;
 }
 
+.info-btn {
+  background: transparent;
+  border: transparent;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #a3d3ea;
+  font-weight: 600;
+}
+
+.title-underline {
+  background: #a3d3ea;
+  width: 7rem;
+  height: 0.25rem;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
 .about {
   font-family: "Poppins", sans-serif;
   color: #fff;

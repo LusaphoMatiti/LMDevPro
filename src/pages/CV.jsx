@@ -6,6 +6,7 @@ const CV = () => {
   return (
     <div className="section cv" id="cv">
       <Title title="my" subTitle="cv" />
+      <div class="title-underline"></div>
       <section className="top-section">
         <div className="profile-img">
           <img src="Ludz.jpg" alt="hb" />
@@ -13,7 +14,7 @@ const CV = () => {
         <div className="spacer"></div>
         <div className="desc">
           <h2>Lusapho Matiti</h2>
-          <p>Front-End Developer</p>
+          <p>Full-Stack Developer</p>
         </div>
       </section>
       <section className="bottom-section">
@@ -53,6 +54,9 @@ const CV = () => {
 
           <h3>Skills</h3>
           <p>JavaScript</p>
+          <p>React</p>
+          <p>React Query</p>
+          <p>GitHub</p>
           <p>HTML5</p>
           <p>CSS</p>
           <p>MySQL</p>

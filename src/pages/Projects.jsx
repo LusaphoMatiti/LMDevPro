@@ -8,6 +8,7 @@ const Projects = () => {
     <div className="section projects" id="projects">
       <div className="section-info">
         <Title title="my" subTitle="projects" />
+        <div class="title-underline"></div>
         <section className="project-grid">
           {projects.map((project) => {
             const { id, image, title, href } = project;
