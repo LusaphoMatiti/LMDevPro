@@ -35,18 +35,18 @@ export const projects = [
     id: 1,
     image: project1,
     title: "Fitness Tracker",
-    href: "https://fitness-tracker-lusapho.netlify.app",
+    href: "https://fitness-tracker-ashy-ten.vercel.app/",
   },
   {
     id: 2,
     image: project2,
-    title: "Garden assist",
+    title: "To-Do App",
     href: "https://garden-lusapho.netlify.app",
   },
   {
     id: 3,
     image: project3,
     title: "Finance Tracker",
-    href: "https://finance-tracker-lusapho.netlify.app/",
+    href: "https://finance-tracker-plum-eight.vercel.app/",
   },
 ];

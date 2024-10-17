@@ -24,8 +24,8 @@ const CV = () => {
             <ul>
               <li>
                 <h4>
-                  National Certificate: Systems Developement - Full Stack Web
-                  and Software Developer
+                  National Certificate: Systems Development - Full Stack Web and
+                  Software Developer
                 </h4>
                 <div className="vertical-line"></div>
                 <div className="education-info">
@@ -53,18 +53,30 @@ const CV = () => {
           </div>
 
           <h3>Skills</h3>
+
+          <h4>Frontend:</h4>
           <p>JavaScript</p>
-          <p>React</p>
+          <p>React.js</p>
           <p>React Query</p>
-          <p>GitHub</p>
           <p>HTML5</p>
+          <p>Tailwind CSS</p>
           <p>CSS</p>
+          <p>Material UI</p>
+
+          <h4>Backend:</h4>
+          <p>Node.js</p>
+          <p>Express.js</p>
+          <p>Axios</p>
           <p>MySQL</p>
-          <p>Digital Literacy</p>
-          <p>Copy Writing</p>
           <p>Database Development</p>
-          <p>Search Engine Optimization</p>
+
+          <h4>Version Control:</h4>
+          <p>GitHub</p>
+
+          <h4>Other:</h4>
+          <p>Search Engine Optimization/ S.E.O</p>
           <p>Data Analysis</p>
+          <p>Copywriting</p>
         </div>
 
         <div className="right">
@@ -77,7 +89,32 @@ const CV = () => {
           </p>
           <h3>Work Experiance</h3>
           <div className="line"></div>
-          <h4>Technical SEO/Writing</h4>
+          <h4>Freelance Web Developer</h4>
+          <h5>May 2024 - present</h5>
+          <ul>
+            <li>
+              Developed and deployed multiple client websites using modern web
+              technologies such as React, Tailwind CSS, Node.js, and MySQL.
+            </li>
+            <li>
+              Built a personal website with React.js and CSS to showcase my
+              projects and skills, fully responsive and optimized for SEO.
+            </li>
+            <li>
+              Created a real-life Todo application using React, MySQL, Tailwind
+              CSS, Material UI, Node.js, and Axios, demonstrating strong
+              full-stack capabilities.
+            </li>
+            <li>
+              Deployed client and personal projects using Vercel, ensuring
+              optimized performance and efficient deployment workflows.
+            </li>
+            <li>
+              Provided custom solutions for client needs, including SEO
+              optimization and responsive design.
+            </li>
+          </ul>
+          <h4>Copywriter Intern</h4>
           <h5>April 2021 - Dec 2021</h5>
           <ul>
             <li>

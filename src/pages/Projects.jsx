@@ -14,7 +14,7 @@ const Projects = () => {
             const { id, image, title, href } = project;
 
             return (
-              <article key={id} className="project-item">
+              <a href={href} key={id} className="project-item">
                 <img src={image} alt="fitness tracker" />
                 <div className="project-info">
                   <div className="project-title">
@@ -22,7 +22,7 @@ const Projects = () => {
                     <a href={href}>view</a>
                   </div>
                 </div>
-              </article>
+              </a>
             );
           })}
         </section>
