@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Loading from "./pages/Loading";
+import "../src/index.css";
 
 const App = () => {
   const [loading, setLoading] = useState(true);

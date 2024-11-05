@@ -8,21 +8,25 @@ const Projects = () => {
     <div className="section projects" id="projects">
       <div className="section-info">
         <Title title="my" subTitle="projects" />
-        <div class="title-underline"></div>
+        <div></div>
         <section className="project-grid">
           {projects.map((project) => {
             const { id, image, title, href } = project;
 
             return (
-              <a href={href} key={id} className="project-item">
-                <img src={image} alt="fitness tracker" />
+              <div key={id} className="project-item">
+                <a href={href}>
+                  <img src={image} alt="fitness tracker" />
+                </a>
                 <div className="project-info">
                   <div className="project-title">
                     <h3>{title}</h3>
-                    <a href={href}>view</a>
+                    <a href={href} className="view-link">
+                      View
+                    </a>
                   </div>
                 </div>
-              </a>
+              </div>
             );
           })}
         </section>

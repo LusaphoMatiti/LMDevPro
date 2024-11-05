@@ -1,98 +1,64 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import logo from "../images/LM.svg";
-import "../styling/Navbar.css";
-
 import { socialLinks, homePageLinks, otherPageLinks } from "../data";
+import "../style/index.css";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === "/";
-
   const pageLinks = isHomePage ? homePageLinks : otherPageLinks;
 
-  // Function to toggle the menu
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    setIsOpen(!isOpen);
   };
 
   return (
     <>
-      <nav className="navbar">
-        <div className="nav-center">
-          <div className="nav-header">
+      <nav className="bg-gray-900 shadow dark:bg-gray-800">
+        <div className="container px-6 py-4 mx-auto">
+          <div className="flex items-center justify-between lg:flex lg:items-center bg-gray-900">
             <Link to="/">
-              <img src={logo} alt="Logo" className="nav-logo" />
+              <img src={logo} alt="Logo" className="w-auto h-6 sm:h-7" />
             </Link>
-
-            <button
-              type="button"
-              className="nav-toggle"
-              id="nav-toggle"
-              onClick={toggleMenu}
-            >
-              <i className="fas fa-bars"></i>
-            </button>
-          </div>
-
-          <ul className="nav-links" id="nav-links">
-            {pageLinks.map((link) => (
-              <li key={link.id}>
-                <a href={link.href} className="nav-link">
-                  {link.text}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <ul className="nav-icons">
-            {socialLinks.map((link) => {
-              const { id, href, icon } = link;
-
-              if (icon === "fas fa-envelope") {
-                return (
-                  <li key={id}>
-                    <a
-                      href={`mailto:clint@cnccustoms.co.za`}
-                      className="nav-icon"
-                      rel="noopener noreferrer"
-                    >
-                      <i className={icon}></i>
-                    </a>
-                  </li>
-                );
-              }
-
-              return (
-                <li key={id}>
-                  <a
-                    href={href}
-                    target="_blank"
-                    className="nav-icon"
-                    rel="noopener noreferrer"
+            <div className="flex lg:hidden">
+              <button
+                onClick={toggleMenu}
+                className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
+              >
+                {isOpen ? (
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
                   >
-                    <i className={icon}></i>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                ) : (
+                  <svg
+                    className="w-6 h-6"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 8h16M4 16h16"
+                    />
+                  </svg>
+                )}
+              </button>
+            </div>
+          </div>
         </div>
       </nav>
-
-      <div className={`side-menu ${showMenu ? "show" : ""}`}>
-        <button className="close-btn" onClick={toggleMenu}>
-          <i className="fas fa-times"></i>
-        </button>
-
-        {pageLinks.map((link) => (
-          <a key={link.id} href={link.href}>
-            {link.text}
-          </a>
-        ))}
-      </div>
     </>
   );
 };

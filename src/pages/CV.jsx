@@ -6,7 +6,7 @@ const CV = () => {
   return (
     <div className="section cv" id="cv">
       <Title title="my" subTitle="cv" />
-      <div class="title-underline"></div>
+      <div className="title-underline"></div>
       <section className="top-section">
         <div className="profile-img">
           <img src="Ludz.jpg" alt="hb" />
