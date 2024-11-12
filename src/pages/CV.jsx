@@ -16,7 +16,7 @@ const CV = () => {
   }, []);
 
   return (
-    <div className="section cv" id="cv">
+    <div className="section cv" id="skills">
       <Title title="my" subTitle="skills" />
       <div className="title-underline"></div>
       <section className="top-section">

@@ -5,14 +5,14 @@ import fa from "./images/Finance-tracker.png";
 export const homePageLinks = [
   { id: 1, href: "#about", text: "About" },
   { id: 2, href: "#projects", text: "Projects" },
-  { id: 3, href: "#cv", text: "CV" },
+  { id: 3, href: "#skills", text: "Skills" },
   { id: 4, href: "#contact", text: "Contact" },
 ];
 
 export const otherPageLinks = [
   { id: 1, href: "/about", text: "About" },
   { id: 2, href: "/projects", text: "Projects" },
-  { id: 3, href: "/cv", text: "CV" },
+  { id: 3, href: "/skills", text: "Skills" },
   { id: 4, href: "/contact", text: "Contact" },
 ];
 
