@@ -9,12 +9,13 @@ body {
   border: transparent;
   text-transform: capitalize;
   cursor: pointer;
-  color: #a3d3ea;
+  color: #76a9fa;
   font-weight: 600;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .title-underline {
-  background: #a3d3ea;
+  background: #38bdf8;
   width: 7rem;
   height: 0.25rem;
   margin: 0 auto;
@@ -44,7 +45,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  filter: blur(12px); /* Adjust the blur intensity as needed */
+  filter: blur(15px); /* Adjust the blur intensity as needed */
   z-index: 0;
 }
 
@@ -66,6 +67,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center; /* Center paragraphs horizontally */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .paragraphs p {

@@ -1,6 +1,6 @@
-import project1 from "./images/dumbbell.png";
-import project2 from "./images/garden.png";
-import project3 from "./images/finance.png";
+import cnc from "./images/CNC-homepage.png";
+import wa from "./images/WA-auto-repair.png";
+import fa from "./images/Finance-tracker.png";
 
 export const homePageLinks = [
   { id: 1, href: "#about", text: "About" },
@@ -33,19 +33,19 @@ export const socialLinks = [
 export const projects = [
   {
     id: 1,
-    image: project1,
-    title: "Fitness Tracker",
-    href: "https://fitness-tracker-ashy-ten.vercel.app/",
+    image: cnc,
+    title: "CNC CUSTOMS",
+    href: "https://www.cnccustoms.co.za",
   },
   {
     id: 2,
-    image: project2,
-    title: "To-Do App",
-    href: "https://garden-lusapho.netlify.app",
+    image: wa,
+    title: "WA AUTO REPAIR",
+    href: "https://wa-auto-repair.vercel.app/",
   },
   {
     id: 3,
-    image: project3,
+    image: fa,
     title: "Finance Tracker",
     href: "https://finance-tracker-plum-eight.vercel.app/",
   },

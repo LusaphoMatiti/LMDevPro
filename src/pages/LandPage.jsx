@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../styling/LandPage.css";
+import "../index.css";
 
 const LandPage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -21,16 +22,18 @@ const LandPage = () => {
         <div
           className="land-img"
           style={{
-            transform: `translateX(-${scrollY * 0.05}px)`, // Move from the left
+            transform: `translateY(-${scrollY * 0.14}px)`, // Move from the left
           }}
         >
-          <img src="Ludz.jpg" alt="hb" />
+          <img className="shadow-lg rounded-full" src="Ludz.jpg" alt="hb" />
         </div>
-        <div className="animate-left">
-          <h1>
-            Hi, I'm <span>LUSAPHO</span>
+        <div className=" lg:text-2xl">
+          <h1 className=" animate-fadeInSlideUp">
+            Hi, I'm <span className="text-blue-400">LUSAPHO</span>
           </h1>
-          <h2>Let's build something awesome together!</h2>
+          <h2 className="animate-fadeInSlideUp animation-delay-1000">
+            Let's build something awesome together!
+          </h2>
         </div>
       </div>
     </div>
