@@ -14,7 +14,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        fadeInSlideUp: "fadeInSlideUp 4s ease-out forwards",
+        fadeInSlideUp: "fadeInSlideUp 2s ease-out forwards",
       },
     },
     keyframes: {
