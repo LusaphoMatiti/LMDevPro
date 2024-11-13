@@ -1,43 +1,95 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 import "../styling/About.css";
 import Title from "../components/Title";
 
 const About = () => {
+  const [readMore, setReadMore] = useState(false);
+  const toggleReadMore = () => setReadMore(!readMore);
+
+  // Define animation variants
+  const fadeUp = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
   return (
     <div className="section about" id="about">
       <div className="blurry-background"></div>
       <div className="about-content">
-        <div className="about-title">
+        <motion.div
+          className="about-title"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          variants={fadeUp}
+        >
           <Title title="About" subTitle="Lusapho" />
-        </div>
+          <div className="title-underline"></div>
+        </motion.div>
+
         <div className="paragraphs">
-          <p>
-            Hey there, I'm Lusapho Matiti, but you can just call me 'Ludz'. As a
-            Front-end Developer, I'm passionate about crafting immersive digital
-            experiences that captivate and inspire. My specialty? ReactJS –
-            where I blend creativity with cutting-edge technology to bring ideas
-            to life.
-          </p>
-          <p>
-            With a knack for pixel-perfect design and a love for elegant code, I
-            thrive on pushing the boundaries of what's possible in the digital
-            realm. Whether it's building sleek user interfaces or optimizing
-            performance for seamless interactions, I'm all about creating
-            wow-worthy experiences that leave a lasting impression.
-          </p>
-          <p>
-            But it's not all about the code – when I'm not immersed in the world
-            of web development, you can find me exploring the great outdoors,
-            working-out, playing football with friends, or jamming out to my
-            favorite songs. Life's too short to stick to just one passion,
-            right?
-          </p>
-          <p>
-            So, welcome to my corner of the web. Whether you're here to
-            collaborate on a project or simply connect with a fellow digital
-            enthusiast, I'm thrilled to have you along for the ride. Let's
-            innovate, create, and make something special together!
-          </p>
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            variants={fadeUp}
+          >
+            Hi, I'm Lusapho Matiti, but you can call me 'Ludz'. I'm a Full-Stack
+            Developer who loves building websites and web applications. I work
+            with ReactJS to make web pages and web apps look good and work well.
+          </motion.p>
+          <motion.p
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            variants={fadeUp}
+          >
+            I focus on making sure everything looks just right on the screen and
+            works smoothly. I enjoy making web applications that are easy to use
+            and leave a good impression.
+          </motion.p>
+
+          {!readMore && (
+            <button onClick={toggleReadMore} className="info-btn">
+              ... Read More
+            </button>
+          )}
+
+          {readMore && (
+            <>
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                variants={fadeUp}
+              >
+                But it's not all about the code – when I'm not immersed in the
+                world of web development, you can find me exploring the great
+                outdoors, working-out, playing football with friends, or
+                listening to my favorite songs. Life's too short to stick to
+                just one passion, right?
+              </motion.p>
+              <motion.p
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.4 }}
+                variants={fadeUp}
+              >
+                So, welcome to my corner of the web. Whether you want to work on
+                a project together or just chat about web development, I'm happy
+                you're here. Let's create something awesome together!
+              </motion.p>
+              <button onClick={toggleReadMore} className="info-btn">
+                Show Less
+              </button>
+            </>
+          )}
         </div>
       </div>
     </div>

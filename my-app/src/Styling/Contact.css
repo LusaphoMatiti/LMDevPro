@@ -8,6 +8,7 @@
   position: relative;
   background-attachment: fixed;
   transform: translateZ(0);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .contact-card {
@@ -17,7 +18,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 80%;
   max-width: 600px;
-  margin-top: 40px;
+
   text-align: left;
   display: flex;
   flex-direction: column;

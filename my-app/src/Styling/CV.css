@@ -15,12 +15,14 @@
 .top-section {
   display: flex;
   flex-direction: row;
-  width: 150vh;
+  width: 120vh;
   align-items: center;
   background-color: #8c8c8c;
   padding: 50px;
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .spacer {
@@ -53,20 +55,25 @@
 
 .left,
 .right {
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 30px;
   margin-bottom: 50px;
   box-sizing: border-box;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.8);
 }
 
 .left {
   background-color: #89bcdb;
-  width: 60vh;
+  width: 120vh;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .right {
   background-color: black;
   width: 90vh;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 .line {

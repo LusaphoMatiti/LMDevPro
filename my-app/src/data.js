@@ -1,18 +1,18 @@
-import project1 from "./images/dumbbell.png";
-import project2 from "./images/garden.png";
-import project3 from "./images/finance.png";
+import cnc from "./images/CNC-homepage.png";
+import wa from "./images/WA-auto-repair.png";
+import fa from "./images/Fitness-tracker.png";
 
 export const homePageLinks = [
-  { id: 1, href: "#about", text: "About" },
-  { id: 2, href: "#projects", text: "Projects" },
-  { id: 3, href: "#cv", text: "CV" },
-  { id: 4, href: "#contact", text: "Contact" },
+  { id: 1, href: "/about", text: "About" },
+  { id: 2, href: "/projects", text: "Projects" },
+  { id: 3, href: "/skills", text: "Skills" },
+  { id: 4, href: "/contact", text: "Contact" },
 ];
 
 export const otherPageLinks = [
   { id: 1, href: "/about", text: "About" },
   { id: 2, href: "/projects", text: "Projects" },
-  { id: 3, href: "/cv", text: "CV" },
+  { id: 3, href: "/skills", text: "Skills" },
   { id: 4, href: "/contact", text: "Contact" },
 ];
 
@@ -33,20 +33,20 @@ export const socialLinks = [
 export const projects = [
   {
     id: 1,
-    image: project1,
-    title: "Fitness Tracker",
-    href: "https://fitness-tracker-lusapho.netlify.app",
+    image: cnc,
+    title: "CNC CUSTOMS",
+    href: "https://www.cnccustoms.co.za",
   },
   {
     id: 2,
-    image: project2,
-    title: "Garden assistant",
-    href: "https://garden-lusapho.netlify.app",
+    image: wa,
+    title: "WA AUTO REPAIR",
+    href: "https://wa-auto-repair.vercel.app/",
   },
   {
     id: 3,
-    image: project3,
-    title: "Finance Tracker",
-    href: "https://finance-tracker-lusapho.netlify.app/",
+    image: fa,
+    title: "Fitness Tracker",
+    href: "https://fitness-tracker-ashy-ten.vercel.app/",
   },
 ];
