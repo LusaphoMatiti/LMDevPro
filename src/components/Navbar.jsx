@@ -15,14 +15,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow dark:bg-gray-800">
+    <nav className="bg-white shadow dark:bg-sky-950">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo on the left */}
         <Link to="/">
           <img
             src={logo}
             alt="Logo"
-            className="h-6 sm:h-[80px] sm:w-[90px]  lg:ml-5 lg:h-[85px] lg:w-[100px]"
+            className="h-6 sm:h-12 sm:w-6  lg:ml-5 lg:h-6 lg:w-6"
           />
         </Link>
 
@@ -99,7 +99,7 @@ const Navbar = () => {
       <div
         className={`${
           isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
-        } absolute inset-x-0 top-16 z-20 w-full bg-white dark:bg-gray-800 transition-transform duration-300 ease-in-out lg:hidden`}
+        } absolute inset-x-0 top-16 z-20 w-full bg-white dark:bg-sky-950 transition-transform duration-300 ease-in-out lg:hidden`}
       >
         <div className="flex flex-col px-6 py-4 space-y-2 text-gray-600 dark:text-gray-300">
           {pageLinks.map((link) => (
