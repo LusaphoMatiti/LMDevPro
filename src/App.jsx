@@ -9,6 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Loading from "./pages/Loading";
 import "./index.css";
+import Trusted from "./pages/Trusted";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -68,6 +69,7 @@ const App = () => {
           element={
             <>
               <LandPage />
+              <Trusted />
               <About />
               <Projects />
               <CV />

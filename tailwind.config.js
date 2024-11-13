@@ -10,17 +10,23 @@ export default {
     "./src/pages/HomePage.jsx",
     "./src/pages/LandPage.jsx",
     "./src/components/Footer.jsx",
+    "./src/pages/Trusted.jsx",
   ],
   theme: {
     extend: {
+      keyframes: {
+        fadeInSlideUp: {
+          "0%": { opacity: "0", transform: "translateY(50px)" },
+          "100%": { opacity: "1", transform: "translateY(0px)" },
+        },
+        slideLeftLoop: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
       animation: {
         fadeInSlideUp: "fadeInSlideUp 2s ease-out forwards",
-      },
-    },
-    keyframes: {
-      fadeInSlideUp: {
-        "0%": { opacity: "0", transform: "translateY(50px)" },
-        "100%": { opacity: "1", transform: "translateY(0px)" },
+        slideLeftLoop: "slideLeftLoop 20s linear infinite",
       },
     },
   },
