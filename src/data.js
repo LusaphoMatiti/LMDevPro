@@ -1,6 +1,6 @@
 import cnc from "./images/CNC-homepage.png";
 import wa from "./images/WA-auto-repair.png";
-import fa from "./images/Finance-tracker.png";
+import fa from "./images/Fitness-tracker.png";
 
 export const homePageLinks = [
   { id: 1, href: "/about", text: "About" },
@@ -46,7 +46,7 @@ export const projects = [
   {
     id: 3,
     image: fa,
-    title: "Finance Tracker",
-    href: "https://finance-tracker-plum-eight.vercel.app/",
+    title: "Fitness Tracker",
+    href: "https://fitness-tracker-ashy-ten.vercel.app/",
   },
 ];
