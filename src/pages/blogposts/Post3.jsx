@@ -460,7 +460,7 @@ const BlogPost = () => {
                 <Link className="text-blue-400 no-underline" to="/contact">
                   get started
                 </Link>
-                .
+                .b
               </p>
             </p>
           </div>
