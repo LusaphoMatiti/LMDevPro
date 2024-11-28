@@ -10,11 +10,23 @@ const LandPage = () => {
       setScrollY(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    const throttledHandleScroll = throttle(handleScroll, 200); // Limit to every 200ms
+    window.addEventListener("scroll", throttledHandleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("scroll", throttledHandleScroll);
     };
   }, []);
+
+  function throttle(fn, wait) {
+    let isThrottled = false;
+    return (...args) => {
+      if (!isThrottled) {
+        fn(...args);
+        isThrottled = true;
+        setTimeout(() => (isThrottled = false), wait);
+      }
+    };
+  }
 
   return (
     <div className="section landpage" id="landpage">
@@ -25,7 +37,12 @@ const LandPage = () => {
             transform: `translateY(-${scrollY * 0.14}px)`, // Move from the left
           }}
         >
-          <img className="shadow-lg rounded-full" src="Ludz.jpg" alt="hb" />
+          <img
+            className="shadow-lg rounded-full"
+            src="Ludz.webp"
+            alt="hb"
+            loading="lazy"
+          />
         </div>
         <div className=" lg:text-2xl">
           <h1 className=" animate-fadeInSlideUp">
