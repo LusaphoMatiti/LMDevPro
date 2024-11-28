@@ -10,33 +10,16 @@ const LandPage = () => {
       setScrollY(window.scrollY);
     };
 
-    const throttledHandleScroll = throttle(handleScroll, 200); // Limit to every 200ms
-    window.addEventListener("scroll", throttledHandleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", throttledHandleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  function throttle(fn, wait) {
-    let isThrottled = false;
-    return (...args) => {
-      if (!isThrottled) {
-        fn(...args);
-        isThrottled = true;
-        setTimeout(() => (isThrottled = false), wait);
-      }
-    };
-  }
 
   return (
     <div className="section landpage" id="landpage">
       <div className="land-content">
-        <div
-          className="land-img"
-          style={{
-            transform: `translateY(-${scrollY * 0.14}px)`, // Move from the left
-          }}
-        >
+        <div className="land-img">
           <img
             className="shadow-lg rounded-full"
             src="Ludz.webp"

@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  background-image: url("../images/landpage.jpeg");
+  background-image: url("../images/landpage.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -15,7 +15,7 @@
   filter: contrast(90%);
   text-align: center;
   -webkit-background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll;
   transform: translateZ(0);
 }
 

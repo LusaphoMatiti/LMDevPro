@@ -21,7 +21,7 @@ const CV = () => {
       <div className="title-underline"></div>
       <section className="top-section">
         <div className="profile-img" data-aos="fade-up">
-          <img src="Ludz.jpg" alt="hb" />
+          <img src="Ludz.webp" alt="hb" loading="lazy" />
         </div>
         <div className="spacer"></div>
         <div className="desc" data-aos="fade-up">
