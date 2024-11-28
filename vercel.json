@@ -3,6 +3,9 @@
   "functions": {
     "api/render": {
       "runtime": "edge"
+    },
+    "*.php": {
+      "runtime": "now-php@1.0.0"
     }
   }
 }
