@@ -1,0 +1,8 @@
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/api/render" }],
+  "functions": {
+    "api/render": {
+      "runtime": "edge"
+    }
+  }
+}
