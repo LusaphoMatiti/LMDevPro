@@ -28,7 +28,7 @@ const BlogPost = () => {
           {/* Author and Date */}
           <div className="flex items-center space-x-4 text-sm text-gray-500 mb-8">
             <img
-              src="/Ludz.jpg"
+              src="/Ludz.webp"
               alt="Author"
               className="w-10 h-10 rounded-full"
             />

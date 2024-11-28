@@ -27,7 +27,7 @@ const BlogPost = () => {
           {/* Author and Date */}
           <div className="flex items-center space-x-4 text-sm text-gray-500 mb-8">
             <img
-              src="/Ludz.jpg"
+              src="/Ludz.webp"
               alt="Author"
               className="w-10 h-10 rounded-full"
             />
@@ -145,20 +145,39 @@ const BlogPost = () => {
                 Here are some examples of AI-driven personalization website
                 designs:
               </b>
-              :
             </p>
             <ul>
               <li>
-                <a href="https://www.amazon.com/">Amazon</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://www.amazon.com/"
+                >
+                  Amazon
+                </Link>
               </li>
               <li>
-                <a href="https://open.spotify.com/">Spotify</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://open.spotify.com/"
+                >
+                  Spotify
+                </Link>
               </li>
               <li>
-                <a href="https://www.nike.com/">Nike</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://www.nike.com/"
+                >
+                  Nike
+                </Link>
               </li>
               <li>
-                <a href="https://www.netflix.com/">Netflix</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://www.netflix.com/"
+                >
+                  Netflix
+                </Link>
               </li>
             </ul>
             <h3>{"2) Parallex Effect"}</h3>
@@ -199,15 +218,28 @@ const BlogPost = () => {
             <h4>Examples of Websites with Parallax Effect Design</h4>
             <ul>
               <li>
-                <a href="https://www.apple.com/airpods-pro/">
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://www.apple.com/airpods-pro/"
+                >
                   Apple - AirPods Pro
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="https://www.jomor.design/">Jomor Design</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://www.jomor.design/"
+                >
+                  Jomor Design
+                </Link>
               </li>
               <li>
-                <a href="https://the-goonies.webflow.io/">Goonies</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://the-goonies.webflow.io/"
+                >
+                  Goonies
+                </Link>
               </li>
             </ul>
             <h3>{"3)  Immersive 3D Elements"}</h3>
@@ -240,13 +272,28 @@ const BlogPost = () => {
 
             <ul>
               <li>
-                <a href="https://chirpley.ai/">Chirpley</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://chirpley.ai/"
+                >
+                  Chirpley
+                </Link>
               </li>
               <li>
-                <a href="https://le-lab.io/">Le Lab</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://le-lab.io/"
+                >
+                  Le Lab
+                </Link>
               </li>
               <li>
-                <a href="https://spacers.wannathis.one/">Spacers</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://spacers.wannathis.one/"
+                >
+                  Spacers
+                </Link>
               </li>
             </ul>
             <h3>{"4) Minimalism with Maximal Impact"}</h3>
@@ -301,13 +348,25 @@ const BlogPost = () => {
 
             <ul>
               <li>
-                <a href="https://www.apple.com/za/">Apple</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://www.apple.com/za/"
+                >
+                  Apple
+                </Link>
               </li>
               <li>
-                <a href="https://www.airbnb.co.za/">Airbnb</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://www.airbnb.co.za/"
+                >
+                  Airbnb
+                </Link>
               </li>
               <li>
-                <a href="">LMDevPro</a>
+                <Link className="text-blue-400 no-underline" href="">
+                  LMDevPro
+                </Link>
               </li>
             </ul>
 
@@ -348,10 +407,20 @@ const BlogPost = () => {
             <p>Examples of Sustainable website design: </p>
             <ul>
               <li>
-                <a href="https://greencitizen.com/">GreenCitizen</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://greencitizen.com/"
+                >
+                  GreenCitizen
+                </Link>
               </li>
               <li>
-                <a href="https://www.rewriteclimate.com/">RewriteClimate</a>
+                <Link
+                  className="text-blue-400 no-underline"
+                  href="https://www.rewriteclimate.com/"
+                >
+                  RewriteClimate
+                </Link>
               </li>
             </ul>
 
