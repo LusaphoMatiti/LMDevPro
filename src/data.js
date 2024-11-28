@@ -7,6 +7,7 @@ export const homePageLinks = [
   { id: 2, href: "/projects", text: "Projects" },
   { id: 3, href: "/skills", text: "Skills" },
   { id: 4, href: "/contact", text: "Contact" },
+  { id: 5, href: "/blogs", text: "Blogs" },
 ];
 
 export const otherPageLinks = [
@@ -14,6 +15,7 @@ export const otherPageLinks = [
   { id: 2, href: "/projects", text: "Projects" },
   { id: 3, href: "/skills", text: "Skills" },
   { id: 4, href: "/contact", text: "Contact" },
+  { id: 5, href: "/blogs", text: "Blogs" },
 ];
 
 export const socialLinks = [
