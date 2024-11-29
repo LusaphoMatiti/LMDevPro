@@ -18,13 +18,13 @@ const Navbar = () => {
     <nav className="bg-white shadow dark:bg-sky-950">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo on the left */}
-        <Link to="/">
+        <a href="/" aria-label="Go to Home">
           <img
             src={logo}
-            alt="Logo"
+            alt="LMDevPro Logo"
             className="h-6 sm:h-12 sm:w-6  lg:ml-5 lg:h-6 lg:w-6"
           />
-        </Link>
+        </a>
 
         {/* Centered Links on large screens */}
         <div className="hidden lg:flex flex-grow justify-center space-x-8">
