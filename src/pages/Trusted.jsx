@@ -6,9 +6,9 @@ const Trusted = () => {
     <div>
       {/* Trusted By Section */}
       <div className="trusted-by bg-gray-800 py-8 overflow-hidden">
-        <h3 className="text-center text-gray-200 text-2xl font-bold mb-6">
+        <h1 className="text-center text-gray-200 text-2xl font-bold mb-6">
           Trusted by
-        </h3>
+        </h1>
         <div className="flex whitespace-nowrap animate-slideLeftLoop">
           <div className="flex space-x-8">
             {/* Original Text Elements */}

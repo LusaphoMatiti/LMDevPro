@@ -72,6 +72,7 @@ const Projects = () => {
             );
           })}
         </div>
+        <h4 className="">More projects are avaliable upon request</h4>
       </div>
     </section>
   );

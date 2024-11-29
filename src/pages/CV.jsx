@@ -26,14 +26,14 @@ const CV = () => {
         <div className="spacer"></div>
         <div className="desc" data-aos="fade-up">
           <h2>Lusapho Matiti</h2>
-          <p>Full-Stack Developer</p>
+          <h3>Full-Stack Developer</h3>
         </div>
       </section>
       <section className="bottom-section">
         <div className="left">
-          <h3 data-aos="fade-up">
+          <h4 data-aos="fade-up">
             <b>Summary</b>
-          </h3>
+          </h4>
           <div className="line"></div>
           <p data-aos="fade-up">
             Passionate and motivated junior Full-Stack Developer with extensive
@@ -49,14 +49,14 @@ const CV = () => {
             scalable, and engaging web solutions.
           </p>
 
-          <h3 data-aos="fade-up">
+          <h4 data-aos="fade-up">
             <b>Skills</b>
-          </h3>
+          </h4>
           <div className="line"></div>
 
-          <h4 data-aos="fade-up">
-            <b>Frontend: </b>
-          </h4>
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>Frontend :</b>
+          </h5>
           <p data-aos="fade-up">JavaScript</p>
           <div className="w-full rounded-full h-4 mb-4" data-aos="fade-up">
             <div
@@ -108,9 +108,9 @@ const CV = () => {
             ></div>
           </div>
 
-          <h4 data-aos="fade-up">
-            <b>Backend:</b>
-          </h4>
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>Backend :</b>
+          </h5>
           <p data-aos="fade-up">Node.js</p>
           <div
             data-aos="fade-up"
@@ -146,9 +146,9 @@ const CV = () => {
             style={{ width: "30%" }}
           ></div>
 
-          <h4 data-aos="fade-up">
-            <b>Version Control: </b>
-          </h4>
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>Version Control :</b>
+          </h5>
           <p data-aos="fade-up">GitHub</p>
           <div
             data-aos="fade-up"
@@ -156,9 +156,9 @@ const CV = () => {
             style={{ width: "15%" }}
           ></div>
 
-          <h4 data-aos="fade-up">
-            <b>Other: </b>
-          </h4>
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>Other :</b>
+          </h5>
           <p data-aos="fade-up">Search Engine Optimization/ S.E.O</p>
           <div
             data-aos="fade-up"
@@ -180,9 +180,9 @@ const CV = () => {
             style={{ width: "50%" }}
           ></div>
 
-          <h3 data-aos="fade-up">
-            <b>References</b>
-          </h3>
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>References :</b>
+          </h5>
           <div className="line"></div>
           <p data-aos="fade-up">My CV and References available upon request.</p>
         </div>

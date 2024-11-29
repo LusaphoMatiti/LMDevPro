@@ -25,7 +25,7 @@ const Contact = () => {
         />
         <div className="title-underline mx-auto mb-8"></div>
 
-        <motion.p
+        <motion.h2
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -35,7 +35,7 @@ const Contact = () => {
         >
           Feel free to reach out through the contact information below or follow
           me on social media.
-        </motion.p>
+        </motion.h2>
 
         <div className="flex flex-col gap-8 items-center">
           {/* Social Media Links */}
@@ -114,11 +114,11 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="contact-card bg-gray-900 p-6 rounded-lg shadow-lg w-full max-w-md text-center mb-10"
         >
-          <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
-          <p className="text-gray-400 mb-4">
+          <h4 className="text-xl font-semibold mb-4">Get in Touch</h4>
+          <h5 className="text-gray-400 mb-4">
             I'm available for freelance projects, collaborations, and more. Feel
             free to drop a message.
-          </p>
+          </h5>
           <div className="space-y-3">
             <div className="flex items-center">
               <svg
