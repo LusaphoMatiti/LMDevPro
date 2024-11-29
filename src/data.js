@@ -23,13 +23,20 @@ export const socialLinks = [
     id: 1,
     href: "https://www.linkedin.com",
     icon: "fa-brands fa-linkedin",
+    ariaLabel: "Visit my LinkedIn profile",
   },
   {
     id: 2,
     href: "https://www.instagram.com",
     icon: "fab fa-instagram",
+    ariaLabel: "Visit my Instagram profile",
   },
-  { id: 3, href: "https://www.gmail.com", icon: "fas fa-envelope" },
+  {
+    id: 3,
+    href: "https://www.gmail.com",
+    icon: "fas fa-envelope",
+    ariaLabel: "Send me an email",
+  },
 ];
 
 export const projects = [

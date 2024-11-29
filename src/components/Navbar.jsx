@@ -144,7 +144,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex justify-center mt-4 space-x-4 mb-4">
-          {socialLinks.map(({ id, href, icon }) => (
+          {socialLinks.map(({ id, href, icon, ariaLabel }) => (
             <a
               key={id}
               href={
@@ -155,6 +155,7 @@ const Navbar = () => {
               target={icon !== "fas fa-envelope" ? "_blank" : "_self"}
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+              aria-label={ariaLabel}
             >
               <i className={icon}></i>
             </a>
