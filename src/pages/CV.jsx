@@ -36,52 +36,18 @@ const CV = () => {
           </h3>
           <div className="line"></div>
           <p data-aos="fade-up">
-            Passionate and motivated junior developer with extensive knowledge
-            of Javascript, MySQL, and Reactjs. I am skilled in Database
-            development, Website design, programming, and software systems.
+            Passionate and motivated junior Full-Stack Developer with extensive
+            knowledge of JavaScript, MySQL, and ReactJS. I specialize in
+            crafting dynamic, user-friendly websites and web applications,
+            blending my skills as a UI/UX Designer to create visually appealing
+            and easy-to-navigate experiences.
           </p>
 
-          <h3 data-aos="fade-up">
-            <b>Education</b>
-          </h3>
-          <div className="line"></div>
-          <div className="education">
-            <ul>
-              <li data-aos="fade-up">
-                <h4 className="before:content-['>'] before:mr-2">
-                  <b>
-                    NC: Systems Development - Full Stack Web and Software
-                    Developer
-                  </b>
-                </h4>
-                <div className="vertical-line"></div>
-                <div className="education-info">
-                  <p>Academic Institute Of Excellence</p>
-                  <p>Feb 2022 - Feb 2024</p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <h4 className="before:content-['>'] before:mr-2">
-                  <b>Data Analysis</b>
-                </h4>
-                <div className="vertical-line"></div>
-                <div className="education-info">
-                  <p>University Of Cape Town</p>
-                  <p>Sep 2020 - Jan 2021</p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <h4 className="before:content-['>'] before:mr-2">
-                  <b>Search Engine Optimization</b>
-                </h4>
-                <div className="vertical-line"></div>
-                <div className="education-info">
-                  <p>University Of Cape Town</p>
-                  <p>Sep 2020 - Jan 2021</p>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <p>
+            I am particularly enthusiastic about helping small businesses and
+            startups establish a strong online presence through modern,
+            scalable, and engaging web solutions.
+          </p>
 
           <h3 data-aos="fade-up">
             <b>Skills</b>
@@ -218,7 +184,7 @@ const CV = () => {
             <b>References</b>
           </h3>
           <div className="line"></div>
-          <p data-aos="fade-up">References available upon request.</p>
+          <p data-aos="fade-up">My CV and References available upon request.</p>
         </div>
       </section>
     </div>

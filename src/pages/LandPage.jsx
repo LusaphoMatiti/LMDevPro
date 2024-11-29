@@ -28,8 +28,13 @@ const LandPage = () => {
           />
         </div>
         <div className=" lg:text-2xl">
-          <h1 className=" animate-fadeInSlideUp">
+          <h2>
             Hi, I'm <span className="text-blue-400">LUSAPHO</span>
+          </h2>
+          <h1 className="flex items-center mt-3 mb-3 space-x-2 text-lg md:text-2xl lg:text-4xl animate-fadeInSlideUp">
+            Full-Stack Developer
+            <div className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 bg-blue-400 rounded-full m-2"></div>
+            UI/UX Designer
           </h1>
           <h2 className="animate-fadeInSlideUp animation-delay-1000">
             Let's build something awesome together!

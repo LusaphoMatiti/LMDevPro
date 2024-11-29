@@ -19,6 +19,12 @@
   transform: translateZ(0);
 }
 
+.circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+}
+
 .animate-left span {
   color: #89bcdb;
 }
