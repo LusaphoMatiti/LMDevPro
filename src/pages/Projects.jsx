@@ -72,7 +72,7 @@ const Projects = () => {
             );
           })}
         </div>
-        <h4 className="">More projects are avaliable upon request</h4>
+        <h3 className="">More projects are avaliable upon request</h3>
       </div>
     </section>
   );
