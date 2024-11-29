@@ -28,17 +28,17 @@ const LandPage = () => {
           />
         </div>
         <div className=" lg:text-2xl">
-          <h2>
+          <h1>
             Hi, I'm <span className="text-blue-400">LUSAPHO</span>
-          </h2>
-          <h1 className="flex items-center mt-3 mb-3 space-x-2 text-lg md:text-2xl lg:text-4xl animate-fadeInSlideUp">
-            Full-Stack Developer
-            <div className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 bg-blue-400 rounded-full m-2"></div>
-            UI/UX Designer
           </h1>
-          <h2 className="animate-fadeInSlideUp animation-delay-1000">
-            Let's build something awesome together!
+          <h2 className="flex items-center mt-1 mb-1 space-x-2 text-sm sm:text-base md:text-lg lg:text-2xl animate-fadeInSlideUp">
+            Full-Stack Developer
+            <div className="w-2.5 h-2.5 sm:w-6 sm:h-6 md:w-4 md:h-4 lg:w-6 lg:h-6 bg-blue-400 rounded-full m-2"></div>
+            UI/UX Designer
           </h2>
+          <h3 className="animate-fadeInSlideUp animation-delay-1000">
+            Let's build something awesome together!
+          </h3>
         </div>
       </div>
     </div>

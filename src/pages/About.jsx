@@ -58,7 +58,11 @@ const About = () => {
           </motion.p>
 
           {!readMore && (
-            <button onClick={toggleReadMore} className="info-btn">
+            <button
+              onClick={toggleReadMore}
+              className="info-btn"
+              aria-label="Read more about the article"
+            >
               ... Read More
             </button>
           )}

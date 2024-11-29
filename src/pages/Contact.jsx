@@ -54,7 +54,8 @@ const Contact = () => {
               <div className="flex justify-center gap-6 mt-4 mb-5">
                 <a
                   className="text-white transition-colors duration-300 transform hover:text-blue-500"
-                  href="mailto:your-email@example.com"
+                  href="mailto:Lusaphonatiti07@gmail.com"
+                  aria-label="Send an email to Lusapho Matiti"
                 >
                   <svg
                     className="w-8 h-8"
@@ -70,7 +71,8 @@ const Contact = () => {
                 </a>
                 <a
                   className="text-white transition-colors duration-300 transform hover:text-blue-500"
-                  href="#"
+                  href="https://www.instagram.com/_lusapho_"
+                  aria-label="Visit my instagram account"
                 >
                   <svg
                     className="w-8 h-8"
@@ -86,9 +88,10 @@ const Contact = () => {
                 </a>
                 <a
                   className="text-white transition-colors duration-300 transform hover:text-blue-500"
-                  href="https://www.linkedin.com/in/your-profile"
+                  href="https://www.linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit my LinkedIn profile"
                 >
                   <svg
                     className="w-8 h-8"

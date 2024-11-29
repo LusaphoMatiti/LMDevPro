@@ -62,9 +62,9 @@ const Projects = () => {
                     style={{ backgroundImage: `url(${image})` }}
                   >
                     <div className="flex flex-col justify-center w-full h-full px-4 py-2 sm:px-6 sm:py-4 md:px-8 md:py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-                      <h3 className="mt-2 text-sm sm:text-base md:text-lg font-semibold text-white capitalize">
+                      <h2 className="mt-2 text-sm sm:text-base md:text-lg font-semibold text-white capitalize">
                         {title}
-                      </h3>
+                      </h2>
                     </div>
                   </div>
                 </Link>

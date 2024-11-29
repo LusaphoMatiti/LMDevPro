@@ -52,6 +52,7 @@ const Navbar = () => {
               target={icon !== "fas fa-envelope" ? "_blank" : "_self"}
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 "
+              aria-label="Visit send Lusapho matiti a email"
             >
               <i className={icon}></i>
             </a>
@@ -63,6 +64,7 @@ const Navbar = () => {
           <button
             onClick={toggleMenu}
             className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? (
               <svg
@@ -126,6 +128,7 @@ const Navbar = () => {
               target={icon !== "fas fa-envelope" ? "_blank" : "_self"}
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+              aria-label="Visit send Lusapho matiti a email"
             >
               <i className={icon}></i>
             </a>
