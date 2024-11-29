@@ -29,13 +29,24 @@ const Navbar = () => {
         {/* Centered Links on large screens */}
         <div className="hidden lg:flex flex-grow justify-center space-x-8">
           {pageLinks.map((link) => (
-            <Link
-              key={link.id}
-              to={link.href}
-              className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200"
-            >
-              {link.text}
-            </Link>
+            <React.Fragment key={link.id}>
+              <Link
+                to={link.href}
+                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200"
+                aria-label={`Navigate to ${link.text}`}
+              >
+                {link.text}
+              </Link>
+              <noscript>
+                <a
+                  href={link.href}
+                  className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200"
+                  aria-label={`Navigate to ${link.text}`}
+                >
+                  {link.text}
+                </a>
+              </noscript>
+            </React.Fragment>
           ))}
         </div>
 
@@ -50,9 +61,13 @@ const Navbar = () => {
                   : href
               }
               target={icon !== "fas fa-envelope" ? "_blank" : "_self"}
-              rel="noopener noreferrer"
+              rel={
+                icon !== "fas fa-envelope" ? "noopener noreferrer" : undefined
+              }
               className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 "
-              aria-label="Visit send Lusapho matiti a email"
+              aria-label={
+                icon === "fas fa-envelope" ? "Send an email" : `Visit ${href}`
+              }
             >
               <i className={icon}></i>
             </a>
@@ -105,14 +120,26 @@ const Navbar = () => {
       >
         <div className="flex flex-col px-6 py-4 space-y-2 text-gray-600 dark:text-gray-300">
           {pageLinks.map((link) => (
-            <Link
-              key={link.id}
-              to={link.href}
-              className="block text-center py-2 hover:text-gray-900 dark:hover:text-gray-200"
-              onClick={() => setIsOpen(false)} // Close menu on click
-            >
-              {link.text}
-            </Link>
+            <React.Fragment key={link.id}>
+              <Link
+                to={link.href}
+                className="block text-center py-2 hover:text-gray-900 dark:hover:text-gray-200"
+                onClick={() => setIsOpen(false)} // Close menu on click
+                aria-label={`Navigate to ${link.text}`}
+              >
+                {link.text}
+              </Link>
+              {/* Fallback */}
+              <noscript>
+                <a
+                  href={link.href}
+                  className="block text-center py-2 hover:text-gray-900 dark:hover:text-gray-200"
+                  aria-label={`Navigate to ${link.text}`}
+                >
+                  {link.text}
+                </a>
+              </noscript>
+            </React.Fragment>
           ))}
         </div>
 
@@ -128,7 +155,6 @@ const Navbar = () => {
               target={icon !== "fas fa-envelope" ? "_blank" : "_self"}
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
-              aria-label="Visit send Lusapho matiti a email"
             >
               <i className={icon}></i>
             </a>
