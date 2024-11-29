@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className="bg-white dark:bg-sky-950">
       <div className="container px-6 py-8 mx-auto">
         <div className="flex flex-col items-center text-center">
-          <a>
+          <a href="/" aria-label="Go to Home">
             <img className="w-auto h-8" src={logo} alt="LMDevPro Logo" />
           </a>
 
