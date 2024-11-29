@@ -43,7 +43,7 @@ const CV = () => {
             and easy-to-navigate experiences.
           </p>
 
-          <p>
+          <p data-aos="fade-up">
             I am particularly enthusiastic about helping small businesses and
             startups establish a strong online presence through modern,
             scalable, and engaging web solutions.
