@@ -10,9 +10,19 @@ const LandPage = () => {
       setScrollY(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => {
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    const preloadBackground = new Image();
+    preloadBackground.src = "/images/landpage.webp";
+    preloadBackground.onload = () => {
+      document.querySelector(
+        ".landpage"
+      ).style.backgroundImage = `url('${preloadBackground.src}')`;
     };
   }, []);
 
@@ -23,6 +33,7 @@ const LandPage = () => {
           <img
             className="shadow-lg rounded-full"
             src="Ludz.webp"
+            sizes="(max-width: 768px) 100vw, 50vw"
             alt="Portrait of Lusapho"
             loading="lazy"
           />
