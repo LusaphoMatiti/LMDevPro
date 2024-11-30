@@ -23,7 +23,7 @@ const LandPage = () => {
           <img
             className="shadow-lg rounded-full"
             src="Ludz.webp"
-            alt="hb"
+            alt="Portrait of Lusapho"
             loading="lazy"
           />
         </div>
