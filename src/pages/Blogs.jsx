@@ -36,6 +36,7 @@ const Blogs = () => {
             <img
               className="relative z-10 object-cover w-full rounded-md h-96"
               src={ten}
+              alt="improve websites user experience"
             />
             <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20  bg-white rounded-md shadow ">
               <Link
@@ -57,7 +58,7 @@ const Blogs = () => {
             <img
               className="relative z-10 object-cover w-full rounded-md h-96"
               src={ux}
-              alt="Blog Image 2"
+              alt="web design trends"
             />
             <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow ">
               <Link
@@ -79,7 +80,7 @@ const Blogs = () => {
             <img
               className="relative z-10 object-cover w-full rounded-md h-96"
               src={startup}
-              alt="Blog Image 2"
+              alt="Website Essentials for startups"
             />
             <div className="relative z-20 max-w-lg p-6 mx-auto -mt-20 bg-white rounded-md shadow ">
               <Link
