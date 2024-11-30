@@ -10,19 +10,9 @@ const LandPage = () => {
       setScrollY(window.scrollY);
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const preloadBackground = new Image();
-    preloadBackground.src = "/images/landpage.webp";
-    preloadBackground.onload = () => {
-      document.querySelector(
-        ".landpage"
-      ).style.backgroundImage = `url('${preloadBackground.src}')`;
     };
   }, []);
 
