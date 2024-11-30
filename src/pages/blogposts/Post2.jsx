@@ -122,20 +122,24 @@ const BlogPost = () => {
             <p>
               <b>How does it benefit a brand?</b>
             </p>
-            <li>
-              <b>Higher Conversion Rates</b>: AI suggests products and offers
-              tailored to individual users, making them more likely to purchase.
-            </li>
-            <li>
-              <b>Improved Customer Loyalty</b>: Personalized experiences build
-              stronger relationships, encouraging repeat visits and long-term
-              engagement.
-            </li>
-            <li>
-              <b>Valuable Insights</b>: AI analyzes customer behavior, providing
-              data-driven insights that help businesses refine strategies and
-              meet customer needs effectively.
-            </li>
+            <ul>
+              <li>
+                <b>Higher Conversion Rates</b>: AI suggests products and offers
+                tailored to individual users, making them more likely to
+                purchase.
+              </li>
+              <li>
+                <b>Improved Customer Loyalty</b>: Personalized experiences build
+                stronger relationships, encouraging repeat visits and long-term
+                engagement.
+              </li>
+              <li>
+                <b>Valuable Insights</b>: AI analyzes customer behavior,
+                providing data-driven insights that help businesses refine
+                strategies and meet customer needs effectively.
+              </li>
+            </ul>
+
             <p>
               So, it doesn’t just enhance user satisfaction, it directly impacts
               a brand's growth and profitability.
@@ -210,11 +214,12 @@ const BlogPost = () => {
                 increasing the chances they'll explore and convert into
                 customers.
               </li>
-              <p>
-                {" "}
-                Here are some examples of websites with Parallax Effect designs:
-              </p>
             </ul>
+            <p>
+              {" "}
+              Here are some examples of websites with Parallax Effect designs:
+            </p>
+
             <h4>Examples of Websites with Parallax Effect Design</h4>
             <ul>
               <li>
