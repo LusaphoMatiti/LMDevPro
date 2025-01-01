@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Cookie&display=swap");
 
 .cv {
-  background-image: url("../images/cv.jpeg"); /* Replace with the path to your CV image */
+  background-image: url("../images/cv.webp"); /* Replace with the path to your CV image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -37,10 +37,10 @@
 }
 
 .desc h2 {
-  font-size: 2.3em;
+  font-size: 2.4em;
 }
 
-.desc p {
+.desc h3 {
   font-size: 2em;
   font-family: "Cookie", cursive;
   color: #89bcdb;

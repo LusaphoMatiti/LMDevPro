@@ -25,7 +25,7 @@ const Contact = () => {
         />
         <div className="title-underline mx-auto mb-8"></div>
 
-        <motion.p
+        <motion.h2
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -35,7 +35,7 @@ const Contact = () => {
         >
           Feel free to reach out through the contact information below or follow
           me on social media.
-        </motion.p>
+        </motion.h2>
 
         <div className="flex flex-col gap-8 items-center">
           {/* Social Media Links */}
@@ -54,7 +54,8 @@ const Contact = () => {
               <div className="flex justify-center gap-6 mt-4 mb-5">
                 <a
                   className="text-white transition-colors duration-300 transform hover:text-blue-500"
-                  href="mailto:your-email@example.com"
+                  href="mailto:Lusaphonatiti07@gmail.com"
+                  aria-label="Send an email to Lusapho Matiti"
                 >
                   <svg
                     className="w-8 h-8"
@@ -70,7 +71,8 @@ const Contact = () => {
                 </a>
                 <a
                   className="text-white transition-colors duration-300 transform hover:text-blue-500"
-                  href="#"
+                  href="https://www.instagram.com/_lusapho_"
+                  aria-label="Visit my instagram account"
                 >
                   <svg
                     className="w-8 h-8"
@@ -86,9 +88,10 @@ const Contact = () => {
                 </a>
                 <a
                   className="text-white transition-colors duration-300 transform hover:text-blue-500"
-                  href="https://www.linkedin.com/in/your-profile"
+                  href="https://www.linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit my LinkedIn profile"
                 >
                   <svg
                     className="w-8 h-8"
@@ -114,11 +117,11 @@ const Contact = () => {
           transition={{ duration: 0.8 }}
           className="contact-card bg-gray-900 p-6 rounded-lg shadow-lg w-full max-w-md text-center mb-10"
         >
-          <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
-          <p className="text-gray-400 mb-4">
+          <h4 className="text-xl font-semibold mb-4">Get in Touch</h4>
+          <h5 className="text-gray-400 mb-4">
             I'm available for freelance projects, collaborations, and more. Feel
             free to drop a message.
-          </p>
+          </h5>
           <div className="space-y-3">
             <div className="flex items-center">
               <svg

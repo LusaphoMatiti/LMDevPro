@@ -38,8 +38,10 @@ const About = () => {
             variants={fadeUp}
           >
             Hi, I'm Lusapho Matiti, but you can call me 'Ludz'. I'm a Full-Stack
-            Developer who loves building websites and web applications. I work
-            with ReactJS to make web pages and web apps look good and work well.
+            Developer who loves building websites and web applications for
+            individuals and small businesses. I work with ReactJS to make web
+            pages and web apps not only look good but also function smoothly and
+            effectively.
           </motion.p>
           <motion.p
             initial="hidden"
@@ -48,13 +50,19 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             variants={fadeUp}
           >
-            I focus on making sure everything looks just right on the screen and
-            works smoothly. I enjoy making web applications that are easy to use
-            and leave a good impression.
+            I focus on creating designs that are visually appealing and
+            user-friendly, blending my skills as a UI/UX Designer to ensure
+            everything looks just right on the screen and works seamlessly. I
+            enjoy making web applications that are easy to use and leave a good
+            impression.
           </motion.p>
 
           {!readMore && (
-            <button onClick={toggleReadMore} className="info-btn">
+            <button
+              onClick={toggleReadMore}
+              className="info-btn"
+              aria-label="Read more about the article"
+            >
               ... Read More
             </button>
           )}
@@ -68,11 +76,11 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.3 }}
                 variants={fadeUp}
               >
-                But it's not all about the code – when I'm not immersed in the
-                world of web development, you can find me exploring the great
-                outdoors, working-out, playing football with friends, or
-                listening to my favorite songs. Life's too short to stick to
-                just one passion, right?
+                But it's not all about the code – when I'm not immersed in web
+                development, you can find me exploring the great outdoors,
+                working out, playing football with friends, or listening to my
+                favorite songs. Life's too short to stick to just one passion,
+                right?
               </motion.p>
               <motion.p
                 initial="hidden"
@@ -81,9 +89,10 @@ const About = () => {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 variants={fadeUp}
               >
-                So, welcome to my corner of the web. Whether you want to work on
-                a project together or just chat about web development, I'm happy
-                you're here. Let's create something awesome together!
+                So, welcome to my corner of the web. Whether you’re a small
+                business owner looking to bring your ideas to life or someone
+                curious about web development, I’m happy you’re here. Let’s
+                create something awesome together!
               </motion.p>
               <button onClick={toggleReadMore} className="info-btn">
                 Show Less

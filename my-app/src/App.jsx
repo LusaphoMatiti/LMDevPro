@@ -9,6 +9,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Loading from "./pages/Loading";
 import "./index.css";
+import Trusted from "./pages/Trusted";
+import Blog from "./pages/Blogs";
+import Post2 from "./pages/blogposts/Post2";
+import Post3 from "./pages/blogposts/Post3";
+import Post1 from "./pages/blogposts/Post1";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -68,6 +73,7 @@ const App = () => {
           element={
             <>
               <LandPage />
+              <Trusted />
               <About />
               <Projects />
               <CV />
@@ -80,6 +86,19 @@ const App = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<CV />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route
+          path="/blogs/how-to-improve-your-websites-user-experience"
+          element={<Post1 />}
+        />
+        <Route
+          path="/blogs/top-web-design-trends-to-watch-in-2025"
+          element={<Post2 />}
+        />
+        <Route
+          path="/blogs/website-essentials-for-startups"
+          element={<Post3 />}
+        />
       </Routes>
       <Footer />
     </Router>

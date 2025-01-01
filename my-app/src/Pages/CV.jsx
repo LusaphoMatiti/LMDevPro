@@ -21,76 +21,42 @@ const CV = () => {
       <div className="title-underline"></div>
       <section className="top-section">
         <div className="profile-img" data-aos="fade-up">
-          <img src="Ludz.jpg" alt="hb" />
+          <img src="Ludz.webp" alt="hb" loading="lazy" />
         </div>
         <div className="spacer"></div>
         <div className="desc" data-aos="fade-up">
           <h2>Lusapho Matiti</h2>
-          <p>Full-Stack Developer</p>
+          <h3>Full-Stack Developer</h3>
         </div>
       </section>
       <section className="bottom-section">
         <div className="left">
-          <h3 data-aos="fade-up">
+          <h4 data-aos="fade-up">
             <b>Summary</b>
-          </h3>
+          </h4>
           <div className="line"></div>
           <p data-aos="fade-up">
-            Passionate and motivated junior developer with extensive knowledge
-            of Javascript, MySQL, and Reactjs. I am skilled in Database
-            development, Website design, programming, and software systems.
+            Passionate and motivated junior Full-Stack Developer with extensive
+            knowledge of JavaScript, MySQL, and ReactJS. I specialize in
+            crafting dynamic, user-friendly websites and web applications,
+            blending my skills as a UI/UX Designer to create visually appealing
+            and easy-to-navigate experiences.
           </p>
 
-          <h3 data-aos="fade-up">
-            <b>Education</b>
-          </h3>
-          <div className="line"></div>
-          <div className="education">
-            <ul>
-              <li data-aos="fade-up">
-                <h4 className="before:content-['>'] before:mr-2">
-                  <b>
-                    NC: Systems Development - Full Stack Web and Software
-                    Developer
-                  </b>
-                </h4>
-                <div className="vertical-line"></div>
-                <div className="education-info">
-                  <p>Academic Institute Of Excellence</p>
-                  <p>Feb 2022 - Feb 2024</p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <h4 className="before:content-['>'] before:mr-2">
-                  <b>Data Analysis</b>
-                </h4>
-                <div className="vertical-line"></div>
-                <div className="education-info">
-                  <p>University Of Cape Town</p>
-                  <p>Sep 2020 - Jan 2021</p>
-                </div>
-              </li>
-              <li data-aos="fade-up">
-                <h4 className="before:content-['>'] before:mr-2">
-                  <b>Search Engine Optimization</b>
-                </h4>
-                <div className="vertical-line"></div>
-                <div className="education-info">
-                  <p>University Of Cape Town</p>
-                  <p>Sep 2020 - Jan 2021</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-
-          <h3 data-aos="fade-up">
-            <b>Skills</b>
-          </h3>
-          <div className="line"></div>
+          <p data-aos="fade-up">
+            I am particularly enthusiastic about helping small businesses and
+            startups establish a strong online presence through modern,
+            scalable, and engaging web solutions.
+          </p>
 
           <h4 data-aos="fade-up">
-            <b>Frontend: </b>
+            <b>Skills</b>
           </h4>
+          <div className="line"></div>
+
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>Frontend :</b>
+          </h5>
           <p data-aos="fade-up">JavaScript</p>
           <div className="w-full rounded-full h-4 mb-4" data-aos="fade-up">
             <div
@@ -142,9 +108,9 @@ const CV = () => {
             ></div>
           </div>
 
-          <h4 data-aos="fade-up">
-            <b>Backend:</b>
-          </h4>
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>Backend :</b>
+          </h5>
           <p data-aos="fade-up">Node.js</p>
           <div
             data-aos="fade-up"
@@ -180,9 +146,9 @@ const CV = () => {
             style={{ width: "30%" }}
           ></div>
 
-          <h4 data-aos="fade-up">
-            <b>Version Control: </b>
-          </h4>
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>Version Control :</b>
+          </h5>
           <p data-aos="fade-up">GitHub</p>
           <div
             data-aos="fade-up"
@@ -190,9 +156,9 @@ const CV = () => {
             style={{ width: "15%" }}
           ></div>
 
-          <h4 data-aos="fade-up">
-            <b>Other: </b>
-          </h4>
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>Other :</b>
+          </h5>
           <p data-aos="fade-up">Search Engine Optimization/ S.E.O</p>
           <div
             data-aos="fade-up"
@@ -214,11 +180,11 @@ const CV = () => {
             style={{ width: "50%" }}
           ></div>
 
-          <h3 data-aos="fade-up">
-            <b>References</b>
-          </h3>
+          <h5 data-aos="fade-up" className="mt-10 mb-5">
+            <b>References :</b>
+          </h5>
           <div className="line"></div>
-          <p data-aos="fade-up">References available upon request.</p>
+          <p data-aos="fade-up">My CV and References available upon request.</p>
         </div>
       </section>
     </div>

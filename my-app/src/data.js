@@ -7,6 +7,7 @@ export const homePageLinks = [
   { id: 2, href: "/projects", text: "Projects" },
   { id: 3, href: "/skills", text: "Skills" },
   { id: 4, href: "/contact", text: "Contact" },
+  { id: 5, href: "/blogs", text: "Blogs" },
 ];
 
 export const otherPageLinks = [
@@ -14,6 +15,7 @@ export const otherPageLinks = [
   { id: 2, href: "/projects", text: "Projects" },
   { id: 3, href: "/skills", text: "Skills" },
   { id: 4, href: "/contact", text: "Contact" },
+  { id: 5, href: "/blogs", text: "Blogs" },
 ];
 
 export const socialLinks = [
@@ -21,13 +23,20 @@ export const socialLinks = [
     id: 1,
     href: "https://www.linkedin.com",
     icon: "fa-brands fa-linkedin",
+    ariaLabel: "Visit my LinkedIn profile",
   },
   {
     id: 2,
     href: "https://www.instagram.com",
     icon: "fab fa-instagram",
+    ariaLabel: "Visit my Instagram profile",
   },
-  { id: 3, href: "https://www.gmail.com", icon: "fas fa-envelope" },
+  {
+    id: 3,
+    href: "https://www.gmail.com",
+    icon: "fas fa-envelope",
+    ariaLabel: "Send me an email",
+  },
 ];
 
 export const projects = [
@@ -41,7 +50,7 @@ export const projects = [
     id: 2,
     image: wa,
     title: "WA AUTO REPAIR",
-    href: "https://wa-auto-repair.vercel.app/",
+    href: "https://www.waautorepairs.co.za/",
   },
   {
     id: 3,

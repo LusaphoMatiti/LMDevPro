@@ -18,24 +18,35 @@ const Navbar = () => {
     <nav className="bg-white shadow dark:bg-sky-950">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo on the left */}
-        <Link to="/">
+        <a href="/" aria-label="Go to Home">
           <img
             src={logo}
-            alt="Logo"
+            alt="LMDevPro Logo"
             className="h-6 sm:h-12 sm:w-6  lg:ml-5 lg:h-6 lg:w-6"
           />
-        </Link>
+        </a>
 
         {/* Centered Links on large screens */}
         <div className="hidden lg:flex flex-grow justify-center space-x-8">
           {pageLinks.map((link) => (
-            <Link
-              key={link.id}
-              to={link.href}
-              className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200"
-            >
-              {link.text}
-            </Link>
+            <React.Fragment key={link.id}>
+              <Link
+                to={link.href}
+                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200"
+                aria-label={`Navigate to ${link.text}`}
+              >
+                {link.text}
+              </Link>
+              <noscript>
+                <a
+                  href={link.href}
+                  className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200"
+                  aria-label={`Navigate to ${link.text}`}
+                >
+                  {link.text}
+                </a>
+              </noscript>
+            </React.Fragment>
           ))}
         </div>
 
@@ -50,8 +61,13 @@ const Navbar = () => {
                   : href
               }
               target={icon !== "fas fa-envelope" ? "_blank" : "_self"}
-              rel="noopener noreferrer"
+              rel={
+                icon !== "fas fa-envelope" ? "noopener noreferrer" : undefined
+              }
               className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300 "
+              aria-label={
+                icon === "fas fa-envelope" ? "Send an email" : `Visit ${href}`
+              }
             >
               <i className={icon}></i>
             </a>
@@ -63,6 +79,7 @@ const Navbar = () => {
           <button
             onClick={toggleMenu}
             className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
+            aria-label={isOpen ? "Close menu" : "Open menu"}
           >
             {isOpen ? (
               <svg
@@ -103,19 +120,31 @@ const Navbar = () => {
       >
         <div className="flex flex-col px-6 py-4 space-y-2 text-gray-600 dark:text-gray-300">
           {pageLinks.map((link) => (
-            <Link
-              key={link.id}
-              to={link.href}
-              className="block text-center py-2 hover:text-gray-900 dark:hover:text-gray-200"
-              onClick={() => setIsOpen(false)} // Close menu on click
-            >
-              {link.text}
-            </Link>
+            <React.Fragment key={link.id}>
+              <Link
+                to={link.href}
+                className="block text-center py-2 hover:text-gray-900 dark:hover:text-gray-200"
+                onClick={() => setIsOpen(false)} // Close menu on click
+                aria-label={`Navigate to ${link.text}`}
+              >
+                {link.text}
+              </Link>
+              {/* Fallback */}
+              <noscript>
+                <a
+                  href={link.href}
+                  className="block text-center py-2 hover:text-gray-900 dark:hover:text-gray-200"
+                  aria-label={`Navigate to ${link.text}`}
+                >
+                  {link.text}
+                </a>
+              </noscript>
+            </React.Fragment>
           ))}
         </div>
 
         <div className="flex justify-center mt-4 space-x-4 mb-4">
-          {socialLinks.map(({ id, href, icon }) => (
+          {socialLinks.map(({ id, href, icon, ariaLabel }) => (
             <a
               key={id}
               href={
@@ -126,6 +155,7 @@ const Navbar = () => {
               target={icon !== "fas fa-envelope" ? "_blank" : "_self"}
               rel="noopener noreferrer"
               className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+              aria-label={ariaLabel}
             >
               <i className={icon}></i>
             </a>

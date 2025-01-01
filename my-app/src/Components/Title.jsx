@@ -3,9 +3,9 @@ import "../styling/Title.css";
 const Title = ({ title, subTitle }) => {
   return (
     <div className="section-title">
-      <h2>
+      <h1>
         {title} <span>{subTitle}</span>
-      </h2>
+      </h1>
     </div>
   );
 };

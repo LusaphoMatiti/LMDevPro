@@ -1,0 +1,72 @@
+.blogs {
+  background-image: url("../images/blog-bg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  -webkit-background-size: cover;
+  width: 100%;
+  position: relative;
+  background-attachment: fixed;
+  transform: translateZ(0);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+
+  /* Responsive padding adjustments */
+  padding: 20px 10px;
+}
+
+.blurr-bg {
+  filter: blur(50px);
+  z-index: -1; /* Keeps blur background behind other content */
+}
+
+@media (max-width: 768px) {
+  .blogs {
+    padding: 15px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Slightly reduced shadow for smaller screens */
+  }
+
+  .blurr-bg {
+    filter: blur(30px); /* Reduce blur for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .blogs {
+    padding: 10px;
+  }
+}
+
+/* @media screen and (max-width: 1024px) {
+  .blogs {
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .blogs {
+    height: 118vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blogs {
+    height: 180vh;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .blogs {
+    height: 240vh;
+  }
+}
+
+
+@media screen and (max-width: 360px) {
+  .blogs {
+    height: 240vh;
+  }
+}
+
+*/
