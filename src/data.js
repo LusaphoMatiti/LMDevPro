@@ -50,7 +50,7 @@ export const projects = [
     id: 2,
     image: wa,
     title: "WA AUTO REPAIR",
-    href: "https://wa-auto-repair.vercel.app/",
+    href: "https://www.waautorepairs.co.za/",
   },
   {
     id: 3,
