@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c8d839f5.css",
+    "main.js": "/static/js/main.08ee8103.js",
+    "static/media/projects1.jpeg": "/static/media/projects1.91181a98775126581f4f.jpeg",
+    "static/media/home.jpeg": "/static/media/home.c2665b05b58d6b92eaca.jpeg",
+    "static/media/contact.jpeg": "/static/media/contact.d1c6a3b971ce686bb4d5.jpeg",
+    "static/media/landpage.jpeg": "/static/media/landpage.63e73e0b70e13fb1f9cd.jpeg",
+    "static/media/fullmenu.jpeg": "/static/media/fullmenu.380525dbba5a0c788d51.jpeg",
+    "static/media/cv.jpeg": "/static/media/cv.efd658058eff3383afd8.jpeg",
+    "index.html": "/index.html",
+    "main.c8d839f5.css.map": "/static/css/main.c8d839f5.css.map",
+    "main.08ee8103.js.map": "/static/js/main.08ee8103.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c8d839f5.css",
+    "static/js/main.08ee8103.js"
+  ]
+}
