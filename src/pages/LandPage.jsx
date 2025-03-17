@@ -1,15 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "../styling/LandPage.css";
 import "../index.css";
 
 const LandPage = () => {
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div className="section landpage" id="landpage">
       <div className="land-content">
