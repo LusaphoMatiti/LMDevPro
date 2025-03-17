@@ -1,12 +1,12 @@
 import React from "react";
 import Navbar from "./components/Navbar";
-import About from "../pages/About";
-import Contact from "../pages/Contact";
-import CV from "../pages/CV";
-import Projects from "../pages/Projects";
-import LandPage from "../pages/LandPage";
+import About from "./About";
+import Contact from "./Contact";
+import CV from "./CV";
+import Projects from "./Projects";
+import LandPage from "./LandPage";
 import "../index.css";
-import Trusted from "../pages/Trusted";
+import Trusted from "./Trusted";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
