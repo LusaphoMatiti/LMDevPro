@@ -1,15 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "../styling/LandPage.css";
 import "../index.css";
 
 const LandPage = () => {
-  const [scrollY, setScrollY] = useState(0);
-
   useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
