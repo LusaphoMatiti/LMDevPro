@@ -32,13 +32,12 @@ const LandPage = () => {
 
           {/* Paragraph Content */}
           <p className="text-sm sm:text-base md:text-lg text-white sm:p-5 mb-6 lg:mb-8 text-center lg:text-left relative z-50">
-            I’m a passionate Full-Stack Developer and UI/UX Designer with a
-            knack for creating intuitive, user-friendly websites and
-            applications. With years of experience in crafting seamless digital
-            experiences, I specialize in turning ideas into functional, visually
-            stunning solutions. Whether it’s building scalable web apps or
-            designing engaging interfaces, I’m here to bring your vision to
-            life.
+            I’m a Full-Stack Developer passionate about building modern,
+            user-friendly web applications. I enjoy working with React.js for
+            the frontend and Node.js for the backend, making seamless and
+            efficient digital experiences. My focus is on writing clean code,
+            improving performance, and delivering functional designs. I'm always
+            eager to learn, grow, and take on new challenges.
           </p>
 
           {/* Call-to-Action Button */}

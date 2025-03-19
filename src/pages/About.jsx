@@ -91,9 +91,11 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               variants={fadeUp}
             >
-              Hi, I'm Lusapho Matiti, but you can call me 'Ludz'. I'm a
-              Full-Stack Developer who loves building websites and web
-              applications for individuals and small businesses.
+              I specialize in creating responsive frontends with React.js and
+              designing scalable backends with Node.js and AWS to build
+              efficient, user-friendly web applications. My approach focuses on
+              writing clean, maintainable code, optimizing performance, and
+              ensuring seamless user experiences.
             </motion.p>
             <motion.p
               className="text-base leading-relaxed mb-4"
@@ -103,9 +105,11 @@ const About = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               variants={fadeUp}
             >
-              I work with ReactJS to create web pages and web applications that
-              are not only visually appealing but also function smoothly and
-              effectively.
+              I’ve worked on real-world projects, including a serverless to-do
+              app and an eCommerce platform, handling everything from
+              development to deployment. These experiences have strengthened my
+              problem-solving skills and deepened my understanding of full-stack
+              development.
             </motion.p>
 
             {!readMore && (
@@ -129,11 +133,10 @@ const About = () => {
                   transition={{ duration: 0.5, delay: 0.3 }}
                   variants={fadeUp}
                 >
-                  But it's not all about the code – when I'm not immersed in web
-                  development, you can find me exploring the great outdoors,
-                  working out, playing football with friends, or listening to my
-                  favorite songs. Life's too short to stick to just one passion,
-                  right?
+                  Outside of coding, I enjoy exploring the outdoors, working
+                  out, playing football, and listening to music. I believe in
+                  continuous learning, taking on new challenges, and creating
+                  web solutions that make a real impact.
                 </motion.p>
                 <motion.p
                   className="text-base leading-relaxed mb-4"
