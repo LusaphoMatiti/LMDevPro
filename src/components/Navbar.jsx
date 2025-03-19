@@ -38,7 +38,7 @@ const Navbar = () => {
               <Link
                 key={link.id}
                 to={link.href}
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-200"
+                className="text-white dark:text-gray-100 hover:text-gray-200 dark:hover:text-gray-300"
                 aria-label={`Navigate to ${link.text}`}
               >
                 {link.text}
