@@ -21,7 +21,7 @@ const Footer = () => {
               <a
                 key={link.id}
                 href={link.href}
-                className="mx-4 text-base text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+                className="mx-4 text-base text-white transition-colors duration-300 hover:text-blue-500  dark:hover:text-blue-400"
                 aria-label={link.text}
               >
                 {link.text}
@@ -33,7 +33,7 @@ const Footer = () => {
         <hr className="my-6 border-gray-200 md:my-10 dark:border-gray-700" />
 
         <div className="flex flex-col items-center sm:flex-row sm:justify-between">
-          <p className="text-base text-gray-500 dark:text-gray-300">
+          <p className="text-base text-white ">
             © LMDevPro {new Date().getFullYear()}. All Rights Reserved.
           </p>
 
@@ -42,7 +42,7 @@ const Footer = () => {
               <a
                 key={link.id}
                 href={link.href}
-                className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="mx-2 text-white transition-colors duration-300  hover:text-blue-500 dark:hover:text-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 aria-label={link.ariaLabel}
                 target="_blank"
                 rel="noopener noreferrer"

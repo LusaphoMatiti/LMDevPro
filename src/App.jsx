@@ -8,7 +8,6 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
 import Loading from "./pages/Loading";
-import "./index.css";
 import Trusted from "./pages/Trusted";
 import Blog from "./pages/Blogs";
 import Post2 from "./pages/blogposts/Post2";
@@ -17,21 +16,21 @@ import Post1 from "./pages/blogposts/Post1";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
-  const maxLoadingTime = 40000; // Max time (10 seconds)
+  const maxLoadingTime = 5000; // Reduced to 5 seconds
 
   useEffect(() => {
     const handlePageLoad = () => {
-      const images = document.querySelectorAll("img");
+      const criticalImages = document.querySelectorAll("img[data-critical]");
       let imagesLoaded = 0;
 
       const imageLoaded = () => {
         imagesLoaded++;
-        if (imagesLoaded === images.length) {
-          setLoading(false); // All images are loaded
+        if (imagesLoaded === criticalImages.length) {
+          setLoading(false); // Stop spinner when critical images are loaded
         }
       };
 
-      images.forEach((image) => {
+      criticalImages.forEach((image) => {
         if (image.complete) {
           imageLoaded(); // Already cached images
         } else {
@@ -40,13 +39,13 @@ const App = () => {
         }
       });
 
-      if (images.length === 0) {
-        setLoading(false); // No images, stop loading spinner
+      if (criticalImages.length === 0) {
+        setLoading(false); // No critical images, stop spinner
       }
 
-      // Fallback: Set timeout to stop spinner after a max time
+      // Fallback: Stop spinner after max time
       const timeoutId = setTimeout(() => {
-        setLoading(false); // Stop spinner even if images aren't done
+        setLoading(false);
       }, maxLoadingTime);
 
       return () => clearTimeout(timeoutId); // Clear timeout on unmount
@@ -64,6 +63,7 @@ const App = () => {
   if (loading) {
     return <Loading />; // Show spinner while loading
   }
+
   return (
     <Router>
       <Navbar />
@@ -81,7 +81,6 @@ const App = () => {
             </>
           }
         />
-
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/skills" element={<CV />} />

@@ -56,7 +56,7 @@ const Navbar = () => {
                 rel={
                   icon !== "fas fa-envelope" ? "noopener noreferrer" : undefined
                 }
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+                className="text-white  hover:text-gray-500 dark:hover:text-gray-300"
                 aria-label={ariaLabel}
               >
                 <i className={icon}></i>
@@ -68,7 +68,7 @@ const Navbar = () => {
           <div className="lg:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
+              className="text-white hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen} // Add this line
             >
@@ -107,9 +107,9 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
-          } absolute inset-x-0 top-16 z-20 w-full bg-white dark:bg-sky-950 transition-transform duration-300 ease-in-out lg:hidden`}
+          } absolute inset-x-0 top-16 z-20 w-full bg-sky-950 transition-transform duration-300 ease-in-out lg:hidden`}
         >
-          <div className="flex flex-col px-6 py-4 space-y-2 text-gray-600 dark:text-gray-300">
+          <div className="flex flex-col px-6 py-4 space-y-2 text-white">
             {pageLinks.map((link) => (
               <Link
                 key={link.id}
@@ -130,7 +130,7 @@ const Navbar = () => {
                 href={href}
                 target={icon !== "fas fa-envelope" ? "_blank" : "_self"}
                 rel="noopener noreferrer"
-                className="text-gray-600 dark:text-gray-300 hover:text-gray-500 dark:hover:text-gray-300"
+                className="text-white hover:text-gray-500 dark:hover:text-gray-300"
                 aria-label={ariaLabel}
               >
                 <i className={icon}></i>
