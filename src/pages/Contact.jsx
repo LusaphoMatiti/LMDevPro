@@ -31,7 +31,6 @@ const Contact = () => {
         />
         <meta property="og:image" content="https://lmdevpro.co.za/Ludz.webp" />
         <meta property="og:url" content="https://lmdevpro.co.za/contact" />
-        <link rel="canonical" href="https://lmdevpro.co.za/contact" />
 
         <script type="application/ld+json">
           {`

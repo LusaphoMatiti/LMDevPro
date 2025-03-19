@@ -56,7 +56,7 @@ const Navbar = () => {
                 rel={
                   icon !== "fas fa-envelope" ? "noopener noreferrer" : undefined
                 }
-                className="text-white  hover:text-gray-500 dark:hover:text-gray-300"
+                className="text-white hover:text-gray-500 dark:hover:text-gray-300"
                 aria-label={ariaLabel}
               >
                 <i className={icon}></i>

@@ -32,7 +32,6 @@ const About = () => {
         />
         <meta property="og:image" content="https://lmdevpro.co.za/Ludz.webp" />
         <meta property="og:url" content="https://lmdevpro.co.za/about" />
-        <link rel="canonical" href="https://lmdevpro.co.za/about" />
 
         <script type="application/ld+json">
           {`

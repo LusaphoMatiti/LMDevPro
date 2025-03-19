@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import LandPage from "./pages/LandPage";
 import About from "./pages/About";
-import CV from "./pages/CV";
+import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Navbar from "./components/Navbar";
@@ -76,14 +76,14 @@ const App = () => {
               <Trusted />
               <About />
               <Projects />
-              <CV />
+              <Skills />
               <Contact />
             </>
           }
         />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/skills" element={<CV />} />
+        <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/blogs" element={<Blog />} />
         <Route

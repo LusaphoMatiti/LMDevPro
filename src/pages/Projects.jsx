@@ -47,7 +47,6 @@ const Projects = () => {
         />
         <meta property="og:image" content="https://lmdevpro.co.za/Ludz.webp" />
         <meta property="og:url" content="https://lmdevpro.co.za/projects" />
-        <link rel="canonical" href="https://lmdevpro.co.za/projects" />
 
         <script type="application/ld+json">
           {`

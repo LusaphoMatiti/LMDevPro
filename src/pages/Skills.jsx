@@ -6,7 +6,7 @@ import "../index.css";
 import AOS from "aos"; // Import AOS
 import "aos/dist/aos.css"; // Import AOS styles
 
-const CV = () => {
+const Skills = () => {
   // Initialize AOS on component mount
   useEffect(() => {
     AOS.init({
@@ -34,8 +34,6 @@ const CV = () => {
           content="Explore my technical skills as a Full-Stack Developer, including expertise in JavaScript, ReactJS, Node.js, MySQL, and UI/UX design. I specialize in building modern, scalable web applications."
         />
         <meta property="og:image" content="https://lmdevpro.co.za/Ludz.webp" />
-        <meta property="og:url" content="https://lmdevpro.co.za/skills" />
-        <link rel="canonical" href="https://lmdevpro.co.za/skills" />
 
         <script type="application/ld+json">
           {`
@@ -274,4 +272,4 @@ const CV = () => {
   );
 };
 
-export default CV;
+export default Skills;
