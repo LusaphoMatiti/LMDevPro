@@ -21,7 +21,7 @@ const Navbar = () => {
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>
 
-      <nav className=" shadow bg-sky-950">
+      <nav className="shadow bg-sky-950 z-20">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo on the left */}
           <Link to="/" aria-label="Go to Home">
@@ -70,7 +70,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(!isOpen)}
               className="text-white hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
               aria-label={isOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isOpen} // Add this line
+              aria-expanded={isOpen}
             >
               {isOpen ? (
                 <svg
@@ -106,7 +106,9 @@ const Navbar = () => {
         {/* Mobile menu */}
         <div
           className={`${
-            isOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-full"
+            isOpen
+              ? "opacity-100 translate-x-0"
+              : "opacity-0 -translate-x-full pointer-events-none"
           } absolute inset-x-0 top-16 z-20 w-full bg-sky-950 transition-transform duration-300 ease-in-out lg:hidden`}
         >
           <div className="flex flex-col px-6 py-4 space-y-2 text-white">
@@ -115,7 +117,10 @@ const Navbar = () => {
                 key={link.id}
                 to={link.href}
                 className="block text-center py-2 hover:text-gray-900 dark:hover:text-gray-200"
-                onClick={() => setIsOpen(false)} // Close menu on click
+                onClick={(e) => {
+                  e.stopPropagation(); // Stop event propagation
+                  setIsOpen(false); // Close menu on click
+                }}
                 aria-label={`Navigate to ${link.text}`}
               >
                 {link.text}

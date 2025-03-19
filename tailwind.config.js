@@ -5,7 +5,7 @@ export default {
     "./src/App.jsx",
     "./src/index.js",
     "./src/pages/Projects.jsx",
-    "./src/pages/CV.jsx",
+    "./src/pages/Skills.jsx",
     "./src/pages/Contact.jsx",
     "./src/pages/HomePage.jsx",
     "./src/pages/LandPage.jsx",

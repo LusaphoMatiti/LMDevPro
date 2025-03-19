@@ -89,7 +89,7 @@ const Projects = () => {
         className="bg-white dark:bg-gray-900 section projects"
         id="projects"
       >
-        <div className="container px-6 py-10 mx-auto">
+        <div className="container mt-10 px-6 py-10 mx-auto z-2">
           {/* Title Section */}
           <div className="text-center mb-8">
             <div className="about-title">
