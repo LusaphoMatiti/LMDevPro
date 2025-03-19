@@ -5,28 +5,14 @@
   align-items: center;
   justify-content: center;
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  background-image: url("../images/landpage.webp");
+  background-image: url("../images/landpage.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
   width: 100%;
   position: relative;
-  filter: contrast(90%);
   text-align: center;
-  -webkit-background-size: cover;
-  background-attachment: scroll;
-  transform: translateZ(0);
-}
-
-.circle {
-  width: 1.5rem;
-  height: 1.5rem;
-  border-radius: 50%;
-}
-
-.animate-left span {
-  color: #89bcdb;
 }
 
 .land-content {
@@ -34,35 +20,55 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.6s ease; /* Smooth transition for the parallax effect */
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Adjust the shadow values as needed */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
   width: 100%;
 }
 
-.land-img {
-  margin-bottom: 20px;
-}
-
+/* Image Styling */
 .land-img img {
   width: 200px;
   height: 200px;
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 100px;
+  margin-bottom: 20px;
 }
 
-.animate-left {
-  transition: transform 0.6s ease; /* Smooth transition for the parallax effect */
+/* Desktop Layout Adjustments */
+@media screen and (min-width: 1024px) {
+  .land-content {
+    flex-direction: row; /* Switch to row layout for desktop */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .land-img {
+    margin-bottom: 0; /* Remove bottom margin for desktop */
+  }
+
+  .land-img img {
+    width: 384px; /* Larger image size for desktop */
+    height: 384px;
+  }
+
+  .landpage h1 {
+    font-size: 3rem; /* Larger font size for desktop */
+  }
+
+  .landpage h2 {
+    font-size: 2rem; /* Larger font size for desktop */
+  }
+
+  .landpage h3 {
+    font-size: 1.5rem; /* Larger font size for desktop */
+  }
 }
 
+/* Responsive Adjustments for Tablets */
 @media screen and (max-width: 1024px) {
   .land-img img {
     width: 175px;
     height: 175px;
     border-radius: 87.5px;
-  }
-
-  .animate-left {
-    margin: 20px;
   }
 
   .landpage h1 {
@@ -72,22 +78,14 @@
   .landpage h2 {
     font-size: 1.5rem;
   }
-
-  .landpage {
-    background-size: cover; /* Maintain size and aspect ratio */
-  }
 }
 
+/* Responsive Adjustments for Mobile */
 @media screen and (max-width: 768px) {
   .land-img img {
     width: 150px;
     height: 150px;
-    object-fit: contain;
     border-radius: 75px;
-  }
-
-  .animate-left {
-    margin: 30px;
   }
 
   .landpage h1 {
@@ -97,20 +95,14 @@
   .landpage h2 {
     font-size: 1.25rem;
   }
-  .landpage {
-    background-size: cover; /* Maintain size and aspect ratio */
-  }
 }
 
+/* Smaller Screens */
 @media screen and (max-width: 480px) {
   .land-img img {
     width: 120px;
     height: 120px;
     border-radius: 60px;
-  }
-
-  .animate-left {
-    margin: 20px;
   }
 
   .landpage h1 {
@@ -119,9 +111,5 @@
 
   .landpage h2 {
     font-size: 1rem;
-  }
-
-  .landpage {
-    background-size: cover; /* Maintain size and aspect ratio */
   }
 }
