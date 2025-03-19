@@ -21,19 +21,19 @@ export const otherPageLinks = [
 export const socialLinks = [
   {
     id: 1,
-    href: "https://www.linkedin.com",
-    icon: "fa-brands fa-linkedin",
-    ariaLabel: "Visit my LinkedIn profile",
+    href: "https://github.com/LusaphoMatiti",
+    icon: "fa-brands fa-github",
+    ariaLabel: "Visit my GitHub profile",
   },
   {
     id: 2,
-    href: "https://www.instagram.com",
+    href: "https://www.instagram.com/_lusapho_",
     icon: "fab fa-instagram",
     ariaLabel: "Visit my Instagram profile",
   },
   {
     id: 3,
-    href: "https://www.gmail.com",
+    href: "mailto:lusaphomatiti07@gmail.com",
     icon: "fas fa-envelope",
     ariaLabel: "Send me an email",
   },

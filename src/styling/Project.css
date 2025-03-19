@@ -98,6 +98,19 @@ a {
   transform: translateZ(0);
 }
 
+.scrollbar-thin {
+  scrollbar-width: thin; /* Firefox */
+}
+
+.scrollbar-thumb-gray-300::-webkit-scrollbar-thumb {
+  background-color: #d1d5db; /* Light gray */
+  border-radius: 9999px;
+}
+
+.scrollbar-track-transparent::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 @media screen and (max-width: 992px) {
   .project-grid {
     flex-direction: column;

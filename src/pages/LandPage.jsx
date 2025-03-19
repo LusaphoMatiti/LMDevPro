@@ -11,13 +11,13 @@ const LandPage = () => {
             className="shadow-lg rounded-full"
             src="Ludz.webp"
             sizes="(max-width: 768px) 100vw, 50vw"
-            alt="Portrait of Lusapho"
+            alt="Portrait of Lusapho Matiti, a Full-Stack Developer"
             loading="lazy"
           />
         </div>
         <div className=" lg:text-2xl">
           <h1>
-            Hi, I'm <span className="text-blue-400">LUSAPHO</span>
+            Hi, I'm <span className="text-blue-400">LUSAPHO MATITI</span>
           </h1>
           <h2 className="flex items-center mt-1 mb-1 space-x-2 text-sm sm:text-base md:text-lg lg:text-2xl animate-fadeInSlideUp">
             Full-Stack Developer

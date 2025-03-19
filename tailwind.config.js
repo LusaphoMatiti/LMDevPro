@@ -30,7 +30,7 @@ export default {
       },
       animation: {
         fadeInSlideUp: "fadeInSlideUp 2s ease-out forwards",
-        slideLeftLoop: "slideLeftLoop 20s linear infinite",
+        slideLeftLoop: "slideLeftLoop 25s linear infinite",
       },
       colors: {
         skyBlue: {
