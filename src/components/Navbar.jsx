@@ -24,7 +24,11 @@ const Navbar = () => {
       <nav className="shadow bg-sky-950 z-20">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo on the left */}
-          <Link to="/" aria-label="Go to Home">
+          <Link
+            to="/"
+            aria-label="Go to Home"
+            className="z-30" // Higher z-index to ensure it's clickable
+          >
             <img
               src={logo}
               alt="LMDevPro Logo"
@@ -65,9 +69,14 @@ const Navbar = () => {
           </div>
 
           {/* Mobile menu button */}
-          <div className="lg:hidden">
+          <div className="lg:hidden z-30">
+            {" "}
+            {/* Higher z-index to ensure it's clickable */}
             <button
-              onClick={() => setIsOpen(!isOpen)}
+              onClick={(e) => {
+                e.stopPropagation(); // Stop event propagation
+                setIsOpen(!isOpen); // Toggle mobile menu state
+              }}
               className="text-white hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none"
               aria-label={isOpen ? "Close menu" : "Open menu"}
               aria-expanded={isOpen}
