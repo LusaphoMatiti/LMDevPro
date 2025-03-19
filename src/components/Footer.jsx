@@ -5,7 +5,7 @@ import logo from "../images/LM.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-white dark:bg-sky-950">
+    <footer className="bg-sky-950">
       <div className="container px-6 py-8 mx-auto">
         <div className="flex flex-col items-center text-center">
           <a href="/" aria-label="Go to Home">

@@ -21,7 +21,7 @@ const Navbar = () => {
         <link rel="canonical" href={canonicalUrl} />
       </Helmet>
 
-      <nav className="bg-white shadow dark:bg-sky-950">
+      <nav className=" shadow bg-sky-950">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo on the left */}
           <Link to="/" aria-label="Go to Home">
