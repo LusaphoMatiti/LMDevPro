@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import "../styling/Contact.css";
 import Title from "../components/Title";
@@ -12,6 +12,24 @@ const fadeUp = {
 };
 
 const Contact = () => {
+  // Decode email and phone number dynamically
+  useEffect(() => {
+    const decodeContactInfo = () => {
+      const emailPlaceholder = document.getElementById("email-placeholder");
+      const phonePlaceholder = document.getElementById("phone-placeholder");
+
+      if (emailPlaceholder) {
+        emailPlaceholder.textContent = "Lusaphonatiti07@gmail.com";
+      }
+
+      if (phonePlaceholder) {
+        phonePlaceholder.textContent = "079 268 5757";
+      }
+    };
+
+    decodeContactInfo();
+  }, []);
+
   return (
     <>
       {/* Meta Tags and Schema.org Markup */}
@@ -77,7 +95,6 @@ const Contact = () => {
           </motion.h2>
 
           <div className="flex flex-col gap-8 items-center">
-            {/* Social Media Links */}
             {/* Social Media Links */}
             <div className="w-full max-w-md text-center">
               <motion.div>
@@ -153,7 +170,9 @@ const Contact = () => {
                 >
                   <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4ZM4 8L12 13L20 8V6L12 11L4 6V8Z" />
                 </svg>
-                <span className="ml-2">Lusaphonatiti07@gmail.com</span>
+                <span className="ml-2" id="email-placeholder">
+                  Loading email...
+                </span>
               </div>
 
               {/* Phone Section */}
@@ -166,7 +185,9 @@ const Contact = () => {
                 >
                   <path d="M17 3H7C5.89 3 5 3.89 5 5V19C5 20.11 5.89 21 7 21H17C18.11 21 19 20.11 19 19V5C19 3.89 18.11 3 17 3ZM17 19H7V5H17V19ZM14.31 7.57L13.07 9.03C12.91 9.22 12.65 9.25 12.47 9.09C12.3 8.94 12.26 8.69 12.41 8.51L13.65 7.05C13.79 6.86 14.06 6.83 14.23 6.98C14.4 7.13 14.44 7.38 14.31 7.57Z" />
                 </svg>
-                <span className="ml-2">079 268 5757</span>
+                <span className="ml-2" id="phone-placeholder">
+                  Loading phone number...
+                </span>
               </div>
             </div>
           </motion.div>
