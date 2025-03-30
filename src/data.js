@@ -1,6 +1,6 @@
-import cnc from "./images/CNC-homepage.png";
-import wa from "./images/WA-auto-repair.png";
-import fa from "./images/Fitness-tracker.png";
+import cnc from "./images/CNC-homepage.webp";
+import wa from "./images/WA-auto-repair.webp";
+import fa from "./images/Fitness-tracker.webp";
 
 export const homePageLinks = [
   { id: 1, href: "/about", text: "About" },

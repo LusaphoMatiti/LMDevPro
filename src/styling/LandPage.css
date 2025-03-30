@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: center;
   overflow-x: hidden; /* Hide horizontal scrollbar */
-  background-image: url("../images/landpage.png");
+  background-image: url("../images/landpage.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
