@@ -1,38 +1,15 @@
-import React, { useEffect, useState, useRef } from "react";
+import React from "react";
 import { projects } from "../data";
-import "../styling/Project.css";
-import Title from "../components/Title";
 import "../index.css";
-import { Link } from "react-router-dom";
+
 import { Helmet } from "react-helmet-async";
 
 const Projects = () => {
-  const [visibleProjects, setVisibleProjects] = useState([]);
-  const projectRefs = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setVisibleProjects((prev) => [...prev, entry.target.dataset.id]);
-            observer.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    projectRefs.current.forEach((ref) => ref && observer.observe(ref));
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <>
       {/* Meta Tags and Schema.org Markup */}
       <Helmet>
-        <title> Lusapho Matiti - Full-Stack Developer</title>
+        <title>Projects | Lusapho Matiti - Full-Stack Developer</title>
         <meta
           name="description"
           content="Explore my portfolio of web development projects, including CNC Customs, WA Auto Repairs, and more. Each project showcases my skills in ReactJS, UI/UX design, and full-stack development."
@@ -85,62 +62,73 @@ const Projects = () => {
       </Helmet>
 
       {/* Main Section */}
-      <section
-        className="bg-white dark:bg-gray-900 section projects"
-        id="projects"
-      >
-        <div className="container mt-10 px-6 py-10 mx-auto z-2">
-          {/* Title Section */}
-          <div className="text-center mb-8">
-            <div className="about-title">
-              <Title title="My" subTitle="Projects" />
-              <div className="title-underline"></div>
-            </div>
+      <section id="projects" className="relative  min-h-screen ">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-fixed bg-center bg-cover"
+          style={{ backgroundImage: "url('./projects.webp')" }}
+        ></div>
+
+        {/* Overlay */}
+        <div className="absolute flex justify-center inset-0 bg-black/70 z-10">
+          <div className="px-6 py-10 text-center">
+            <h1 className="text-white font-bebas font-bold text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl leading-tight z-20 ">
+              MY<span className="text-[#929090] ml-2">PROJECTS</span>
+            </h1>
           </div>
+        </div>
 
-          {/* Projects Grid Layout */}
-          <div className="grid grid-cols-1 gap-6 mt-8 overflow-y-auto max-h-screen xl:mt-12 xl:gap-8 md:grid-cols-2 xl:grid-cols-3 scrollbar-thin scrollbar-thumb-gray-300 dark:scrollbar-thumb-gray-700 scrollbar-track-transparent">
-            {projects.map((project, index) => {
-              const { id, title, image, href } = project;
-              const isVisible = visibleProjects.includes(id.toString());
-
-              return (
-                <Link key={id} to={href}>
-                  <div
-                    ref={(el) => (projectRefs.current[index] = el)}
-                    data-id={id}
-                    className={`overflow-hidden bg-cover bg-center rounded-lg cursor-pointer h-32 sm:h-50 sm:w-50 md:h-56 lg:h-72 group transform transition duration-700 ease-in-out ${
-                      isVisible
-                        ? "opacity-100 translate-y-0"
-                        : "opacity-0 translate-y-10"
-                    }`}
-                    style={{ backgroundImage: `url(${image})` }}
-                    aria-label={`Project: ${title}`}
+        {/* Content */}
+        <div className="relative z-20 flex items-center justify-center px-4  py-20">
+          {/* Responsive Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 sm:mt-8 lg:mt-14 lg:grid-cols-3 pt-8 gap-8 max-w-7xl w-full">
+            {/* Single Cards */}
+            {projects.map((project) => (
+              <div
+                key={project.id}
+                className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden flex flex-col"
+              >
+                <img
+                  className="object-cover w-full h-48 sm:h-64"
+                  src={project.image}
+                  alt="Project Thumbnail"
+                />
+                <div className="p-6 flex flex-col flex-grow">
+                  <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
+                    Project
+                  </span>
+                  <a
+                    href={project.href}
+                    className="mt-2 text-2xl font-bold font-bebas text-gray-800 dark:text-white hover:text-gray-600 hover:underline"
+                    tabIndex="0"
+                    role="link"
                   >
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/60">
-                      <h2 className="text-white text-lg font-semibold">
-                        {title}
-                      </h2>
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
+                    {project.title}
+                  </a>
+                  <p className="mt-2 sm:text-md md:text-lg text-gray-600 dark:text-gray-400 flex-grow">
+                    {project.desc}
+                  </p>
 
-          {/* Additional Text */}
-          <h3 className="text-center mt-8 text-white opacity-500">
-            More projects are available upon request or you can also check out
-            my{" "}
-            <a
-              href="https://github.com/LusaphoMatiti"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-300 hover:underline"
-            >
-              GitHub profile
-            </a>
-          </h3>
+                  <p className="mt-2 text-sm text-gray-600 dark:text-gray-400 flex-grow ">
+                    Built with:{" "}
+                    <span className="font-bold">{project.madeWtih}</span>
+                  </p>
+
+                  {/* logo */}
+                  <div className="mt-4 flex flex-wrap items-center gap-2">
+                    {project.logos.map((logo, index) => (
+                      <img
+                        key={index}
+                        className="h-7 w-7 object-cover "
+                        src={logo}
+                        alt={`${project.title} tech logo`}
+                      />
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

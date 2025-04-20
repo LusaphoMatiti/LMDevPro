@@ -9,6 +9,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .loading {
   width: 6rem;
   height: 6rem;

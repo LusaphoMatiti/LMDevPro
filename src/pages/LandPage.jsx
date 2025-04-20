@@ -1,55 +1,67 @@
 import React from "react";
-import "../styling/LandPage.css";
+import { motion } from "framer-motion";
 import "../index.css";
 
 const LandPage = () => {
   return (
-    <div className="section landpage z-1" id="landpage">
-      {/* Hero Content */}
-      <div className="land-content lg:flex-row lg:items-center lg:justify-between">
-        {/* Image Section */}
-        <div className="land-img lg:w-1/2 lg:flex lg:justify-end lg:pr-8">
-          <img
-            src="/Ludz.webp"
-            alt="Portrait of Lusapho Matiti, a Full-Stack Developer"
-            className="shadow-lg rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 object-cover"
-            loading="lazy"
-          />
-        </div>
+    <section className="relative font-bebas h-screen overflow-hidden" id="home">
+      {/* Background Image */}
+      <div
+        className="absolute inset-0 bg-fixed bg-center bg-cover"
+        style={{ backgroundImage: "url('./landpage.webp')" }}
+      ></div>
 
-        {/* Text Section */}
-        <div className="lg:w-1/2 lg:text-left lg:pl-8">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 lg:mb-6 text-center lg:text-left">
-            Hi, I'm <span className="text-blue-400">LUSAPHO MATITI</span>
-          </h1>
-          <h2 className="flex items-center text-xl sm:text-2xl md:text-3xl text-white mb-4 lg:mb-6 justify-center lg:justify-start">
-            Full-Stack Developer
-            <div className="w-4 h-4 sm:w-6 sm:h-6 bg-blue-400 rounded-full mx-2"></div>
-            UI/UX Designer
-          </h2>
-
-          {/* Brief Paragraph About Yourself */}
-
-          {/* Paragraph Content */}
-          <p className="text-sm sm:text-base md:text-lg text-white sm:p-5 mb-6 lg:mb-8 text-center lg:text-left relative z-50">
-            I’m a Full-Stack Developer passionate about building modern,
-            user-friendly web applications. I enjoy working with React.js for
-            the frontend and Node.js for the backend, making seamless and
-            efficient digital experiences. My focus is on writing clean code,
-            improving performance, and delivering functional designs. I'm always
-            eager to learn, grow, and take on new challenges.
-          </p>
-
-          {/* Call-to-Action Button */}
-          <a
-            href="/about"
-            className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-300 ease-in-out mx-auto lg:mx-0"
+      {/* Overlay */}
+      <div className="relative h-full inset-0 bg-black/70 z-10">
+        <div className="flex flex-col justify-center items-center h-full text-center px-4">
+          {/* Title Animation */}
+          <motion.h1
+            className="text-white font-bold text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-tight"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 2, ease: "easeOut" }}
           >
-            Learn More About Me
+            <span className="text-[#929090]">
+              <a href="#projects">Full Stack </a>
+            </span>{" "}
+            DEVELOPER
+          </motion.h1>
+
+          {/* Description Animation */}
+          <motion.p
+            className="text-white text-base sm:text-lg md:text-xl lg:text-2xl mt-6 max-w-md sm:max-w-lg md:max-w-xl"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 2, delay: 0.2, ease: "easeOut" }}
+          >
+            Hi, I'm{" "}
+            <span className="text-[#929090]">
+              <a href="#about">Lusapho Matiti</a>
+            </span>
+            , a skilled <a href="#projects">Full Stack Developer</a>{" "}
+            specializing in{" "}
+            <a
+              href="https://react.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              React
+            </a>
+            , UX/UI design, and building user-friendly web applications. Let's
+            create something awesome together!
+          </motion.p>
+        </div>
+        <div className="flex justify-center -mt-20">
+          <a href="#about" className="cursor-pointer animate-bounce">
+            <img
+              src="./arrowhead.svg"
+              alt="down arrow"
+              className="w-12 z-20  bg-white"
+            />
           </a>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

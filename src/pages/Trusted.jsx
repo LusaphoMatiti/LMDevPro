@@ -2,48 +2,87 @@ import React, { useEffect, useState } from "react";
 import "../index.css";
 
 const Trusted = () => {
-  const [duplicatedContent, setDuplicatedContent] = useState([]);
+  const [duplicatedContentLeft, setDuplicatedContentLeft] = useState([]);
+  const [duplicatedContentRight, setDuplicatedContentRight] = useState([]);
 
   useEffect(() => {
-    // Function to calculate and duplicate content
-    const calculateDuplicates = () => {
-      const trustedBy = ["CNC Customs", "WA Auto Repairs"];
+    // Function to calculate and duplicate content for left-to-right animation
+    const calculateDuplicatesLeft = () => {
+      const trustedByLeft = ["CNC Customs", "WA Auto Repairs"];
       const viewportWidth = window.innerWidth;
-      const itemWidth = 200; // Approximate width of each item (adjust as needed)
+      const itemWidth = 100; // Approximate width of each item (adjust as needed)
       const itemsPerViewport = Math.ceil(viewportWidth / itemWidth);
       const totalItems = itemsPerViewport * 2; // Double the content for seamless looping
 
       const duplicated = [];
       for (let i = 0; i < totalItems; i++) {
-        duplicated.push(trustedBy[i % trustedBy.length]);
+        duplicated.push(trustedByLeft[i % trustedByLeft.length]);
       }
 
-      setDuplicatedContent(duplicated);
+      setDuplicatedContentLeft(duplicated);
     };
 
-    // Initial calculation
-    calculateDuplicates();
+    // Function to calculate and duplicate content for right-to-left animation
+    const calculateDuplicatesRight = () => {
+      const trustedByRight = ["Luman", "FlowNest"];
+      const viewportWidth = window.innerWidth;
+      const itemWidth = 100; // Approximate width of each item (adjust as needed)
+      const itemsPerViewport = Math.ceil(viewportWidth / itemWidth);
+      const totalItems = itemsPerViewport * 2; // Double the content for seamless looping
+
+      const duplicated = [];
+      for (let i = 0; i < totalItems; i++) {
+        duplicated.push(trustedByRight[i % trustedByRight.length]);
+      }
+
+      setDuplicatedContentRight(duplicated);
+    };
+
+    // Initial calculations
+    calculateDuplicatesLeft();
+    calculateDuplicatesRight();
 
     // Recalculate on window resize
-    window.addEventListener("resize", calculateDuplicates);
+    window.addEventListener("resize", calculateDuplicatesLeft);
+    window.addEventListener("resize", calculateDuplicatesRight);
 
-    // Cleanup event listener
-    return () => window.removeEventListener("resize", calculateDuplicates);
+    // Cleanup event listeners
+    return () => {
+      window.removeEventListener("resize", calculateDuplicatesLeft);
+      window.removeEventListener("resize", calculateDuplicatesRight);
+    };
   }, []);
 
   return (
     <div>
-      {/* Trusted By Section */}
-      <div className="trusted-by bg-gray-800 py-8 overflow-hidden">
-        <h1 className="text-center text-gray-200 text-2xl font-bold mb-6">
+      {/* Trusted By Section - Left to Right */}
+      <div className="trusted-by bg-white py-3 overflow-hidden">
+        <h1 className="text-center text-[#111111] text-2xl font-bold mb-6">
           Trusted by
         </h1>
         <div className="flex whitespace-nowrap animate-slideLeftLoop">
           <div className="flex space-x-8">
-            {duplicatedContent.map((item, index) => (
+            {duplicatedContentLeft.map((item, index) => (
               <h2
                 key={index}
-                className="text-gray-400 font-extrabold text-lg tracking-wide"
+                className="text-[#111111] font-extrabold text-lg tracking-wide"
+              >
+                {item}
+              </h2>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* Trusted By Section - Right to Left */}
+
+      <div className="trusted-by bg-[#111111]  py-3 overflow-hidden">
+        <div className="flex whitespace-nowrap py-4 animate-slideRightLoop">
+          <div className="flex space-x-8">
+            {duplicatedContentRight.map((item, index) => (
+              <h2
+                key={index}
+                className="text-white font-extrabold text-lg tracking-wide"
               >
                 {item}
               </h2>

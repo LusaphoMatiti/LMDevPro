@@ -34,36 +34,57 @@
     <!-- Canonical Link -->
     <link rel="canonical" href="https://lmdevpro.co.za" />
 
-    <!-- Preload Critical Resources -->
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://analytics.ahrefs.com" crossorigin />
+
+    <!-- Optimized Font Loading -->
     <link
       rel="preload"
-      href="https://fonts.gstatic.com/s/montserrat/v25/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&family=Bebas+Neue&display=swap"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link
-      rel="preload"
-      href="https://fonts.gstatic.com/s/poppins/v20/pxiByp8kv8JHgFVrLDz8Z1xlFd2JQEk.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
-    <link rel="preload" as="image" href="https://lmdevpro.co.za/Ludz.webp" />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;600&family=Bebas+Neue&display=swap"
+      />
+    </noscript>
+
+    <!-- Critical CSS (inline if possible) -->
+    <style>
+      /* Add critical CSS here for above-the-fold content */
+      .loading {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+      }
+    </style>
+
+    <!-- Preload only critical above-the-fold images -->
     <link
       rel="preload"
       as="image"
       href="https://lmdevpro.co.za/landpage.webp"
+      media="(min-width: 800px)"
+      imagesrcset="https://lmdevpro.co.za/landpage.webp 800w,
+                  https://lmdevpro.co.za/landpage-mobile.webp 400w"
+      imagesizes="(max-width: 600px) 400px, 800px"
     />
 
-    <!-- Stylesheets -->
+    <!-- Non-critical stylesheets -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      media="print"
+      onload="this.media='all'"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      media="print"
+      onload="this.media='all'"
     />
 
     <!-- Ahrefs Analytics -->
@@ -111,10 +132,32 @@
   </head>
   <body>
     <div id="root"></div>
-    <!-- Scripts -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
-      defer
-    ></script>
+
+    <!-- Non-critical scripts -->
+    <script>
+      // Load non-critical CSS
+      function loadCSS(url) {
+        const link = document.createElement("link");
+        link.rel = "stylesheet";
+        link.href = url;
+        document.head.appendChild(link);
+      }
+
+      // Load AOS after main content
+      window.addEventListener("load", function () {
+        const aosScript = document.createElement("script");
+        aosScript.src =
+          "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js";
+        aosScript.defer = true;
+        document.body.appendChild(aosScript);
+
+        // Initialize AOS after it loads
+        aosScript.onload = function () {
+          if (typeof AOS !== "undefined") {
+            AOS.init();
+          }
+        };
+      });
+    </script>
   </body>
 </html>

@@ -1,20 +1,22 @@
-import React, { useState, useEffect } from "react";
+// routes.js
+import React from "react";
+import { Route, Routes } from "react-router-dom";
 import LandPage from "./pages/LandPage";
 import About from "./pages/About";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import Navbar from "./components/Navbar";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Footer from "./components/Footer";
-import Loading from "./pages/Loading";
-import Trusted from "./pages/Trusted";
 import Blog from "./pages/Blogs";
+import Post1 from "./pages/blogposts/Post1";
 import Post2 from "./pages/blogposts/Post2";
 import Post3 from "./pages/blogposts/Post3";
-import Post1 from "./pages/blogposts/Post1";
+import Trusted from "./pages/Trusted";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Loading from "./pages/Loading";
+import { useState, useEffect } from "react";
 
-const App = () => {
+const AppRoutes = () => {
   const [loading, setLoading] = useState(true);
   const maxLoadingTime = 5000; // Reduced to 5 seconds
 
@@ -65,7 +67,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <>
       <Navbar />
       <Routes>
         <Route
@@ -100,8 +102,8 @@ const App = () => {
         />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 };
 
-export default App;
+export default AppRoutes;

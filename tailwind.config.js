@@ -1,21 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./src/components/Navbar.jsx",
-    "./src/App.jsx",
-    "./src/index.js",
-    "./src/pages/Projects.jsx",
-    "./src/pages/Skills.jsx",
-    "./src/pages/Contact.jsx",
-    "./src/pages/HomePage.jsx",
-    "./src/pages/LandPage.jsx",
-    "./src/components/Footer.jsx",
-    "./src/pages/Trusted.jsx",
-    "./src/pages/Blogs.jsx",
-    "./src/pages/blogposts/Post1.jsx",
-    "./src/pages/blogposts/Post2.jsx",
-    "./src/pages/blogposts/Post3.jsx",
-  ],
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
       keyframes: {
@@ -27,20 +12,41 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+        slideRightLoop: {
+          "0%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+        // Add bounce animation keyframes
+        bounce: {
+          "0%, 100%": {
+            transform: "translateY(-25%)",
+            animationTimingFunction: "cubic-bezier(0.8,0,1,1)",
+          },
+          "50%": {
+            transform: "translateY(0)",
+            animationTimingFunction: "cubic-bezier(0,0,0.2,1)",
+          },
+        },
       },
       animation: {
         fadeInSlideUp: "fadeInSlideUp 2s ease-out forwards",
         slideLeftLoop: "slideLeftLoop 25s linear infinite",
+        slideRightLoop: "slideRightLoop 25s linear infinite",
+        // Add bounce animation
+        bounce: "bounce 1s infinite",
       },
       colors: {
         skyBlue: {
-          light: "#b3e5fc", // Light sky blue
-          DEFAULT: "#87CEEB", // Sky blue
-          dark: "#00bcd4", // Darker aqua blue
+          light: "#b3e5fc",
+          DEFAULT: "#87CEEB",
+          dark: "#00bcd4",
         },
+      },
+      fontFamily: {
+        bebas: ["Bebas Neue", "sans-serif"],
       },
     },
   },
   variants: {},
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), require("tailwindcss-animate")],
 };
