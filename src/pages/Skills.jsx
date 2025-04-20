@@ -57,7 +57,7 @@ const Skills = () => {
       </Helmet>
 
       <section
-        className="bg-[#FAFAFA] min-h-screen relative dark:bg-gray-900 p-5 flex flex-col items-center"
+        className="bg-[#FAFAFA] min-h-screen relative dark:bg-gray-900 p-5 sm:p-8 flex flex-col items-center"
         id="skills"
       >
         <div className="px-6 py-10 text-center">

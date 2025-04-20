@@ -142,7 +142,7 @@ export const techData = {
     { name: "MySQL", image: "./mysql.svg" },
     { name: "Node.js", image: "./nodejs.svg" },
     { name: "Express.js", image: "./express.svg" },
-    { name: "Axios", image: "./azios.svg" },
+    { name: "Axios", image: "./Azios.svg" },
   ],
   cloud: [
     { name: "AWS S3", image: "./aws.png" },
