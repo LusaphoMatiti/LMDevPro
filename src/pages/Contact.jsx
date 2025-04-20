@@ -70,7 +70,7 @@ const Contact = () => {
       {/* Main Section */}
       <section
         id="contacts"
-        className="relative h-[120vh] font-bebas sm:h-[140vh]"
+        className="relative h-[120vh]  font-bebas sm:h-[160vh]"
       >
         <div className="container px-6 py-12 mx-auto">
           {/* Background Image */}
