@@ -67,7 +67,7 @@ const Skills = () => {
         </div>
 
         {/* Tree Trunk */}
-        <div className="relative w-1 bg-gray-400 min-h-[300vh] mt-10">
+        <div className="relative w-1 bg-gray-400 min-h-[210vh] sm:min-h-[185vh]  mt-10">
           <Branch
             side="right"
             title="Frontend"
@@ -78,19 +78,19 @@ const Skills = () => {
             side="left"
             title="Backend"
             items={techData.backend}
-            topOffset={600}
+            topOffset={300}
           />
           <Branch
             side="right"
             title="Cloud"
             items={techData.cloud}
-            topOffset={1000}
+            topOffset={600}
           />
           <Branch
             side="left"
             title="Miscellaneous"
             items={techData.misc}
-            topOffset={1700}
+            topOffset={900}
           />
         </div>
       </section>
