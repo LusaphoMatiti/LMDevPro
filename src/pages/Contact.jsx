@@ -1,8 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "../index.css";
 import { Helmet } from "react-helmet-async";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const [successMessage, setSuccessMessage] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_vqz536b",
+        "template_3ipsx1e",
+        e.target,
+        "6OKsfr5CIv9pf60UZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setSuccessMessage(true);
+          setTimeout(() => setSuccessMessage(false), 4000);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <>
       {/* Meta Tags and Schema.org Markup */}
@@ -63,14 +89,19 @@ const Contact = () => {
                     Hire me
                   </h1>
 
-                  <p className="max-w-xl mt-4 text-lg">
+                  <p className="max-w-xl mt-4 mb-4 text-lg">
                     I'm available for freelance projects, collaborations, and
                     more. Feel free to drop a message!
                   </p>
 
-                  <button className="px-6 py-2 mt-4 text-sm font-medium tracking-wide text-black hover:text-[#FAFAFA] capitalize transition-colors duration-300 transform bg-[#FAFAFA] rounded-md hover:bg-[#969696] focus:outline-none focus:ring focus:ring-[#cfcece] focus:ring-opacity-50">
+                  <a
+                    className="px-6 py-2 mt-6 text-sm font-medium tracking-wide text-black hover:text-[#FAFAFA] capitalize transition-colors duration-300 transform bg-[#FAFAFA] rounded-md hover:bg-[#969696] focus:outline-none focus:ring focus:ring-[#cfcece] focus:ring-opacity-50"
+                    href="mailto:Lusaphonatiti07@gmail.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     get in touch
-                  </button>
+                  </a>
 
                   <div className="mt-6">
                     <h3 className="text-gray-300">Follow me</h3>
@@ -79,6 +110,8 @@ const Contact = () => {
                       <a
                         className="text-white transition-colors duration-300 transform hover:text-blue-500"
                         href="https://x.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <svg
                           className="w-8 h-8 fill-current"
@@ -94,6 +127,7 @@ const Contact = () => {
                         className="text-white transition-colors duration-300 transform hover:text-blue-500"
                         href="https://github.com/LusaphoMatiti"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <svg
                           className="w-7 h-7"
@@ -111,6 +145,8 @@ const Contact = () => {
                       <a
                         className="text-white transition-colors duration-300 transform hover:text-blue-500"
                         href="https://www.instagram.com/_lusapho_"
+                        target="_blank"
+                        rel="noopener noreferrer"
                       >
                         <svg
                           className="w-8 h-8"
@@ -139,13 +175,14 @@ const Contact = () => {
                       Ask me anything and I would love to hear from you
                     </p>
 
-                    <form className="mt-6">
+                    <form className="mt-6" onSubmit={handleSubmit}>
                       <div className="mb-4">
                         <label className="block mb-2 text-sm text-gray-600 dark:text-gray-200">
                           Full Name
                         </label>
                         <input
                           type="text"
+                          name="name"
                           placeholder="Full Name"
                           className="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-black focus:ring-gray-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                         />
@@ -157,6 +194,7 @@ const Contact = () => {
                         </label>
                         <input
                           type="email"
+                          name="email"
                           placeholder="email"
                           className="block w-full px-4 py-2 text-gray-700 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-black focus:ring-gray-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
                         />
@@ -168,13 +206,19 @@ const Contact = () => {
                         </label>
                         <textarea
                           className="block w-full h-32 px-4 py-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:bg-gray-900 dark:text-gray-300 dark:border-gray-600 focus:border-black focus:ring-gray-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring"
+                          name="message"
                           placeholder="Message"
                         ></textarea>
                       </div>
 
                       <button className="w-full px-4 py-2 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#626262] hover:bg-[#969696] hover:text-black rounded-md focus:outline-none focus:ring focus:ring-[#cfcece] focus:ring-opacity-50">
-                        get in touch
+                        Send Message
                       </button>
+                      {successMessage && (
+                        <p className="text-green-500 mt-4 text-center">
+                          Message Sent Successfully!
+                        </p>
+                      )}
                     </form>
                   </div>
                 </div>
