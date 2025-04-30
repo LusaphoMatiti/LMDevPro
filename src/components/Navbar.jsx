@@ -41,7 +41,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="/" aria-label="Go to Home" className="z-30 cursor-pointer">
             <img
-              src={scrolled ? "./Logo.jpg" : "./LM.svg"}
+              src={scrolled ? "/Logo.jpg" : "/LM.svg"}
               alt="LMDevPro Logo"
               className="w-9 sm:w-19  object-contain lg:ml-5"
             />

@@ -95,7 +95,7 @@ const Projects = () => {
                 />
                 <div className="p-6 flex flex-col flex-grow">
                   <span className="text-xs font-medium text-blue-600 uppercase dark:text-blue-400">
-                    Project
+                    {project.type}
                   </span>
                   <a
                     href={project.href}
