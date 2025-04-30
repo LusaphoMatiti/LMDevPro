@@ -102,6 +102,8 @@ const Projects = () => {
                     className="mt-2 text-2xl font-bold font-bebas text-gray-800 dark:text-white hover:text-gray-600 hover:underline"
                     tabIndex="0"
                     role="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   >
                     {project.title}
                   </a>
