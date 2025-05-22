@@ -43,7 +43,7 @@ export const projects = [
     title: "Fork & Flame",
     type: "FullStack Project",
     href: "https://fork-flame.vercel.app/",
-    desc: "Fork & Flame is website to make your dining experience easier and more enjoyable. You can view the full menu and detailed descriptions of each dish. Book a table online quickly reserve a spot at your convenience. Browse by category whether you're in the mood for seafood, desserts, vegetarian options, or meat dishes",
+    desc: "Fork & Flame is website to make dining experience easier and enjoyable. You can view the full menu and detailed descriptions of each dish or browse dishes by category and book a table online, quickly reserve a spot at your convenience.",
     madeWtih:
       "JavaScript, Tailwind CSS, React, Supabase , Express.js, Axios, External APIs",
     logos: [
