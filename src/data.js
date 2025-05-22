@@ -39,6 +39,26 @@ export const socialLinks = [
 export const projects = [
   {
     id: 1,
+    image: "./Fork_Flame.png",
+    title: "Fork & Flame",
+    type: "FullStack Project",
+    href: "https://fork-flame.vercel.app/",
+    desc: "Fork & Flame is website to make your dining experience easier and more enjoyable. You can view the full menu and detailed descriptions of each dish. Book a table online quickly reserve a spot at your convenience. Browse by category whether you're in the mood for seafood, desserts, vegetarian options, or meat dishes",
+    madeWtih:
+      "JavaScript, Tailwind CSS, React, Supabase , Express.js, Axios, External APIs",
+    logos: [
+      "./js.svg",
+      "tailwind.png",
+      "./github.png",
+      "./express.svg",
+      "./vercel.png",
+      "./react.png",
+      "./Azios.svg",
+    ],
+  },
+  ,
+  {
+    id: 2,
     image: "./BloomNews.png",
     title: "Bloom News",
     type: "FullStack Project",
@@ -57,7 +77,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     image: lp,
     title: "Luman Photography",
     type: "FRONTEND PROJECT",
@@ -75,7 +95,7 @@ export const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     image: fn,
     title: "FlowNest Landing Page (Demo)",
     type: "FRONTEND PROJECT",
@@ -86,7 +106,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 5,
     image: cnc,
     title: "CNC CUSTOMS",
     type: "FullStack Project",
@@ -103,7 +123,7 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     image: wa,
     title: "WA AUTO REPAIR",
     type: "FRONTEND Project",
@@ -122,7 +142,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 7,
     image: task,
     title: "Task App (Beta)",
     type: "Serverless Project",
@@ -138,7 +158,7 @@ export const projects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     image: fa,
     title: "Fitness Tracker",
     type: "FRONTEND Project",
