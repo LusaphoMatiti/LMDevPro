@@ -113,6 +113,31 @@ export const projects = [
       "./react.png",
     ],
     designProcess: {
+      research:
+        "To design a clean and impactful photography site, I spoke with the photographer and he emphasized the importance of visual storytelling, fast-loading galleries, and a layout that feels elegant but not cluttered. The photographer wanted a site that showcased work with minimal distraction, while also supporting mobile-first browsing. These insights guided a design that’s simple, immersive, and highlights the imagery without unnecessary friction.",
+      wireframe:
+        "The wireframes were designed to highlight visual content without distractions. The landing page features a fullscreen hero image with the photographer’s logo. Below about the photographer is a clean grid-based gallery layout allows users to browse the gallery. A contact section is included at the bottom for quick client inquiries. The layout prioritizes minimal text, whitespace, and smooth scrolling to keep focus on the images and storytelling.",
+      wireframe_img: "./Luman_wireframe.png",
+      userFlow_img: "./Luman_userflow.png",
+    },
+  },
+  {
+    id: 4,
+    image: "./under_construction.png",
+    title: "Zipora",
+    type: "Application",
+
+    desc: "Coming Soon....",
+    madeWtih: "Coming Soon....",
+    logos: [
+      "./js.svg",
+      "css3.png",
+      "./github.png",
+      "./html.png",
+      "./vercel.png",
+      "./react.png",
+    ],
+    designProcess: {
       research: "",
       wireframe: "",
       wireframe_img: "",
@@ -120,7 +145,7 @@ export const projects = [
     },
   },
   {
-    id: 4,
+    id: 5,
     image: fn,
     title: "FlowNest Landing Page (Demo)",
     type: "FRONTEND PROJECT",
@@ -138,7 +163,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     image: cnc,
     title: "CNC CUSTOMS",
     type: "FullStack Project",
